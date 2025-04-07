@@ -6,6 +6,7 @@ public class Stalagmite : MonoBehaviour
 {
     private Transform kenzenTransform;
     private Vector3 kenzenCurrentPosition;
+    private const float posYOffset = -25f; // Offset para evitar que o stalagmite apareça em cima do Kenzen
     [SerializeField] private GameObject stalagmitePrefab;
 
     private void Start()
@@ -21,7 +22,7 @@ public class Stalagmite : MonoBehaviour
     {
         for (int i = 0; i < 5; i++)
         {
-            kenzenCurrentPosition = kenzenTransform.position;
+            kenzenCurrentPosition = new Vector3(kenzenTransform.position.x, kenzenTransform.position.y + posYOffset, 0f);
             Instantiate(stalagmitePrefab, kenzenCurrentPosition, Quaternion.identity);
             yield return new WaitForSeconds(1.5f);
         }
