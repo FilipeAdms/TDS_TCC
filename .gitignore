@@ -1,0 +1,13 @@
+# Unity
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]serSettings/
+Packages/com.unity.package-manager-do-not-use.lock
+# Visual Studio / Rider
+*.csproj
+*.sln
+*.userprefs
