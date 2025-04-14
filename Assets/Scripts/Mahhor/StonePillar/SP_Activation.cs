@@ -1,9 +1,8 @@
 using System.Collections;
-using TMPro;
+using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class MahhorSkills : MonoBehaviour
+public class SP_Activation : MonoBehaviour
 {
     private const float stonePillarCD = 10f;  // Tempo de cooldown
     private const float stonePillarRange = 300f;  // Alcance
@@ -18,19 +17,12 @@ public class MahhorSkills : MonoBehaviour
         invokeStonePillar = GetComponent<SP_Invoke>();  // Obter o componente SP_Invoke
     }
 
-    private void FixedUpdate()
-    {
-        // A habilidade é ativada somente se estiver disponível
-        if (stonePillarAvailable)
-        {
-            DetectPlayer();
-        }
-    }
-
     // Detecta se o jogador está dentro do alcance
-    protected void DetectPlayer()
+    public void DetectPlayer()
     {
-        // Detecta todas as entidades dentro 
+        if(!stonePillarAvailable) return;  // Se a habilidade não estiver disponível, sai do método
+
+        // Detecta todas as entidades dentro da área de alance
         entities = Physics2D.OverlapCircleAll(transform.position, stonePillarRange, playerMask);
         if (entities.Length > 0)
         {
@@ -38,8 +30,6 @@ public class MahhorSkills : MonoBehaviour
             UseStonePillar();
         }
     }
-
-
 
     // Método para usar o StonePillar
     private void UseStonePillar()

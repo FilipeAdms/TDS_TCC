@@ -674,6 +674,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 539205592}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &593802436 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6082900269736063294, guid: 6c66aa6f85f7fea438a13e87698b9d9a, type: 3}
+  m_PrefabInstance: {fileID: 3778913440900014223}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: befab4d904c668249928bac42d6c6fea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -1413,6 +1424,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7175844599164319359, guid: 6c66aa6f85f7fea438a13e87698b9d9a, type: 3}
+      propertyPath: mahhorController
+      value: 
+      objectReference: {fileID: 593802436}
     - target: {fileID: 7481735788027894725, guid: 6c66aa6f85f7fea438a13e87698b9d9a, type: 3}
       propertyPath: m_Name
       value: Mahhor

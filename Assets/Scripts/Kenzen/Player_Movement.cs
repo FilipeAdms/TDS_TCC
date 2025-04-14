@@ -68,12 +68,10 @@ public class Player_Movement : MonoBehaviour
 
         if (hMov > 0)
         {
-        Debug.Log($"X {hMov}");
             rb.transform.eulerAngles = new Vector3(0f,0f,0f); // Vira para a direita
         }
         else if (hMov < 0)
         {
-        Debug.Log($"X {hMov}");
             rb.transform.eulerAngles = new Vector3(0f, -180f, 0f); // Vira para a direita
         }
     }

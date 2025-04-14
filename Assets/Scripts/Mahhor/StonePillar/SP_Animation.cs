@@ -8,12 +8,14 @@ public class SP_Animation : MonoBehaviour
     [SerializeField] private SP_Invoke invokeStonePillar;
     public float idleTime = 1f;
     private float animationTime;
+    
 
     private void Start()
     {
         invokeStonePillar = GameObject.Find("Mahhor")?.GetComponent<SP_Invoke>();
 
         animator = GetComponent<Animator>();
+        
 
         if (animator == null || invokeStonePillar == null)
         {

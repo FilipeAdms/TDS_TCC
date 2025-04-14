@@ -161,6 +161,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   invokeStonePillar: {fileID: 4839484204639628976, guid: 6c66aa6f85f7fea438a13e87698b9d9a, type: 3}
+  mahhorController: {fileID: 6082900269736063294, guid: 6c66aa6f85f7fea438a13e87698b9d9a, type: 3}
   idleTime: 1
 --- !u!212 &3564716305823414450
 SpriteRenderer:

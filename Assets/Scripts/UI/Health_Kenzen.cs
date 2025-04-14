@@ -14,6 +14,7 @@ public class Health_Kenzen : MonoBehaviour
     public float maxHealth;
     public float defense;
     public float healthRegen;
+    public bool receivedDamagedStonePillar = false;
 
     private void Start()
     {
@@ -92,7 +93,5 @@ public class Health_Kenzen : MonoBehaviour
         maxHealth = stats_Data.characterData.maxHealth; // Atualizando o valor da vida máxima numa variável mais simples para usar
         defense = stats_Data.characterData.defense; // Atualizando o valor da defesa numa variável mais simples para usar
         healthRegen = stats_Data.characterData.healthRegen; // Atualizando o valor da HealthRegen numa variável mais simples para usar
-
-        Debug.Log($"AtulizeStats chamado! Novo healthRegen: {healthRegen}");
     }
 }

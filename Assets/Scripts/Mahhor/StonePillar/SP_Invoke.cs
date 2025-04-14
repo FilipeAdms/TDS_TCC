@@ -5,10 +5,11 @@ using UnityEngine.EventSystems;
 using UnityEngine.UIElements;
 using static UnityEngine.EventSystems.EventTrigger;
 
-public class SP_Invoke : MahhorSkills
+public class SP_Invoke : SP_Activation
 {
 
     [SerializeField] private GameObject prefabStonePillar;
+    [SerializeField] private MahhorController mahhorController;
     [SerializeField] private SP_Animation spAnimation;
     private Vector3 playerPosition;
     private Vector3 playerDirection;
@@ -16,6 +17,10 @@ public class SP_Invoke : MahhorSkills
 
     private readonly List<GameObject> spawnedPillars = new(); // Lista pra guardar os pilares criados
 
+    private void Start()
+    {
+        mahhorController = GetComponent<MahhorController>();
+    }
     public IEnumerator Invoke_StonePillar()
     {
         playerPosition = transform.position;
@@ -39,7 +44,7 @@ public class SP_Invoke : MahhorSkills
             posso fazer referências a este objeto*/
             yield return new WaitForSeconds(0.05f);
         }
-
+        mahhorController.canAct = true; // Permite que o jogador ative outras habilidades
     }
 
     public void StartDestroyPillar()
@@ -56,6 +61,19 @@ public class SP_Invoke : MahhorSkills
             Destroy(pillar);
         }
         spawnedPillars.Clear(); // Limpa a lista após a destruição de todos os pilares
+        ResetDamageFlag();
+    }
+
+    private void ResetDamageFlag()
+    {
+        if (entities.Length > 0)
+        {
+            Health_Kenzen player = entities[0].GetComponent<Health_Kenzen>();
+            if (player != null)
+            {
+                player.receivedDamagedStonePillar = false;
+            }
+        }
     }
 
 }
