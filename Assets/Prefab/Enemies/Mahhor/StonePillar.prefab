@@ -13,8 +13,6 @@ GameObject:
   - component: {fileID: 340293079974104840}
   - component: {fileID: 8818088385411803545}
   - component: {fileID: 7975278248347519905}
-  - component: {fileID: 5102576149446195549}
-  - component: {fileID: -5774831855407398468}
   - component: {fileID: 3564716305823414450}
   m_Layer: 0
   m_Name: StonePillar
@@ -136,33 +134,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &5102576149446195549
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7806012540114878243}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9aa6f3e83c7cf914291a831b15f166b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &-5774831855407398468
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7806012540114878243}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aefd83d42d9997943b26dfe4041c1efd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  invokeStonePillar: {fileID: 4839484204639628976, guid: 6c66aa6f85f7fea438a13e87698b9d9a, type: 3}
-  mahhorController: {fileID: 6082900269736063294, guid: 6c66aa6f85f7fea438a13e87698b9d9a, type: 3}
-  idleTime: 1
 --- !u!212 &3564716305823414450
 SpriteRenderer:
   m_ObjectHideFlags: 0
