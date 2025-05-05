@@ -5,8 +5,13 @@ using UnityEngine;
 
 public class UnitStateMachine : MonoBehaviour
 {
-    public State currentState { get; private set; } // A máquina de estados da unidade
-    public StatusComponent status { get; private set; } // O componente de status da unidade
+    public State CurrentState { get; private set; } // A máquina de estados da unidade
+    public StatusComponent Status { get; private set; } // O componente de status da unidade
+    public Rigidbody2D Rigidbody2d { get; private set; } // O Rigidbody2D da unidade
+    public Transform Transforms { get; private set; } // O Transform da unidade
+    public FindEnemyOnAttack FindEnemyOnAttack { get; private set; } // O script de detecção de inimigos
+    public PlayerController PlayerController { get; private set; } // O controlador do jogador
+    public TrailRenderer trailRenderer { get; private set; } // O TrailRenderer da unidade
 
     private Animator animator; // O Animator da unidade
     //Um dictionery serve para armazenar pares de chave-valor, onde a chave é do tipo Type e o valor é do tipo State
@@ -14,9 +19,19 @@ public class UnitStateMachine : MonoBehaviour
 
     private void Awake()
     {
-        status = GetComponent<StatusComponent>();
+        Status = GetComponent<StatusComponent>();
 
         animator = GetComponent<Animator>();
+
+        Rigidbody2d = GetComponent<Rigidbody2D>();
+
+        Transforms = GetComponent<Transform>();
+
+        PlayerController = GetComponent<PlayerController>();
+
+        FindEnemyOnAttack = GetComponent<FindEnemyOnAttack>();
+
+        trailRenderer = GetComponent<TrailRenderer>();
 
     }
 
@@ -25,19 +40,21 @@ public class UnitStateMachine : MonoBehaviour
         // Inicializa o dicionário de estados, ou seja cria os estados
         states = new Dictionary<Type, State>
         {
-            { typeof(PlayerIdleState), new PlayerIdleState(this) },
-            { typeof(PlayerMoveState), new PlayerMoveState(this) },
+            { typeof(IdleState), new IdleState(this) },
+            { typeof(MoveState), new MoveState(this) },
+            { typeof(AttackState), new AttackState(this) },
+            { typeof(DashState), new DashState(this) },
             { typeof(DeathState), new DeathState(this) }
         };
 
-        // Define o estado inicial como PlayerIdleState
-        SetState(states[typeof(PlayerIdleState)]);
+        // Define o estado inicial como IdleState
+        SetState(states[typeof(IdleState)]);
     }
 
     private void Update()
     {
         // Chama o Tick de cada estado
-        currentState?.Tick();
+        CurrentState?.Tick();
     }
 
     // Método para trocar o estado
@@ -48,9 +65,9 @@ public class UnitStateMachine : MonoBehaviour
             Debug.LogError("Novo estado não pode ser nulo.");
             return;
         }
-        currentState?.Exit(); // Executa o Exit do estado atual
-        currentState = newState; // Define o novo estado
-        currentState.Enter(); // Executa o Enter do novo estado
+        CurrentState?.Exit(); // Executa o Exit do estado atual
+        CurrentState = newState; // Define o novo estado
+        CurrentState.Enter(); // Executa o Enter do novo estado
     }
 
     // Método para acessar o Animator
@@ -64,6 +81,8 @@ public class UnitStateMachine : MonoBehaviour
     {
         // Verifica se o estado existe no dicionário
         if (states.TryGetValue(typeof(StateName), out var newState))
+        //type of retorna o tipo do objeto, ou seja, o tipo do estado
+        // ou var retorna o estado do dicionário
         {
             SetState(newState); // Troca para o novo estado
         }
