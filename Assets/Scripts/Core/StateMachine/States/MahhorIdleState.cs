@@ -8,7 +8,14 @@ public class MahhorIdleState : MahhorState
 
     public override void Enter() {
         unit.GetAnimator().Play("Idle");
+        unit.StartCoroutine(IdleTime());
     }
     public override void Tick() { }
     public override void Exit() { }
+
+    private IEnumerator IdleTime()
+    {
+        yield return new WaitForSeconds(3f);
+        unit.ChangeState<MahhorMoveState>();
+    }
 }
