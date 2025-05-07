@@ -4,16 +4,15 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    private UnitStateMachine unit;
+    private PlayerStateMachine unit;
     private StatusComponent status;
     public bool canAttack = true;
-    public bool canDash = true;
     [SerializeField] private PlayerBars playerBars;
 
     private void Start()
     {
         status = GetComponent<StatusComponent>();
-        unit = GetComponent<UnitStateMachine>();
+        unit = GetComponent<PlayerStateMachine>();
 
         playerBars.SetMaxHealth(status.maxHealth); // Define a barra de vida inicial
         playerBars.SetHealth(status.currentHealth); // Atualiza a barra de vida inicial
@@ -27,11 +26,6 @@ public class PlayerController : MonoBehaviour
             canAttack = false;
             Attack();
         }
-        if (Input.GetKeyDown(KeyCode.K) && canDash)
-        {
-            canDash = false;
-            Dash();
-        }
     }
 
     private void Attack()
@@ -40,9 +34,5 @@ public class PlayerController : MonoBehaviour
         unit.ChangeState<AttackState>();
     }
 
-    private void Dash()
-    {
-        Debug.Log("sla eu: " + Equals(unit));
-        unit.ChangeState<DashState>();
-    }
+
 }

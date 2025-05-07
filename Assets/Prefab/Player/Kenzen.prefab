@@ -20,6 +20,7 @@ GameObject:
   - component: {fileID: 6001459714822484572}
   - component: {fileID: 7757578304917676396}
   - component: {fileID: 7473812474247911772}
+  - component: {fileID: 4743792480218880868}
   m_Layer: 6
   m_Name: Kenzen
   m_TagString: Player
@@ -156,8 +157,8 @@ TrailRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Time: 1
+  m_SortingOrder: 9
+  m_Time: 0.5
   m_PreviewTimeScale: 1
   m_Parameters:
     serializedVersion: 3
@@ -166,8 +167,8 @@ TrailRenderer:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0.04088211
-        value: 0.77697754
+        time: 0.053462982
+        value: 0.20144272
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -176,7 +177,7 @@ TrailRenderer:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 1
-        value: 0.17985612
+        value: 0
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -398,3 +399,16 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 8
+--- !u!114 &4743792480218880868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6857141265693282576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50feb1f662294304e9051e9eab891806, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDash: 1

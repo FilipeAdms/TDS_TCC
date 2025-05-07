@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class MahhorController : MonoBehaviour
 {
-    private UnitStateMachine unit;
+    private PlayerStateMachine unit;
     private StatusComponent status;
     [SerializeField] private MahhorBars mahhorBars;
 
     private void Start()
     {
         status = GetComponent<StatusComponent>();
-        unit = GetComponent<UnitStateMachine>();
+        unit = GetComponent<PlayerStateMachine>();
 
         mahhorBars.SetMaxHealth(status.maxHealth);
         mahhorBars.SetHealth(status.currentHealth);

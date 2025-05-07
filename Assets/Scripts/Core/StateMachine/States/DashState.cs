@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class DashState : State
 {
-    public DashState(UnitStateMachine unit) : base(unit){ }
+    public DashState(PlayerStateMachine unit) : base(unit){ }
 
-    
     private float dashingSpeed = 3f;
     private float dashDuration = 0.25f;
     private Vector2 dashDirection;
@@ -30,7 +29,7 @@ public class DashState : State
         unit.StartCoroutine(StopDashing());
     }
     public override void Tick() { }
-    public override void Exit() { unit.PlayerController.canDash = true; }
+    public override void Exit() { }
 
     private IEnumerator StopDashing()
     {

@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class MoveState : State
 {
-    public MoveState(UnitStateMachine unit) : base(unit) { } // Construtor que recebe a unidade
+    public MoveState(PlayerStateMachine unit) : base(unit) { } // Construtor que recebe a unidade
     public EntityComponent entityComponent;
 
     private float vMove;

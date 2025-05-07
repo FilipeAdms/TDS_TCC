@@ -9,7 +9,7 @@ public class AttackState : State
 {
     private float animationLength;
     
-    public AttackState(UnitStateMachine unit) : base(unit) { }
+    public AttackState(PlayerStateMachine unit) : base(unit) { }
 
     public override void Enter()
     {

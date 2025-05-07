@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 8376193521812762627}
   - component: {fileID: 8768627907979372917}
   - component: {fileID: 8214489409440278786}
-  - component: {fileID: 5679405260816472905}
   - component: {fileID: 4499986771363205354}
   - component: {fileID: 6125768640198169357}
   m_Layer: 3
@@ -210,18 +209,6 @@ MonoBehaviour:
   baseDefense: 20
   baseHealthRegen: 1.25
   baseAuraRegen: 1.75
---- !u!114 &5679405260816472905
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7481735788027894725}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35a4aa1313f6a9644ab613af570958c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &4499986771363205354
 MonoBehaviour:
   m_ObjectHideFlags: 0

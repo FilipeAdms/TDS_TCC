@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class IdleState : State
 {
-    public IdleState(UnitStateMachine unit) : base(unit) { } // Construtor que recebe a unidade
+    public IdleState(PlayerStateMachine unit) : base(unit) { } // Construtor que recebe a unidade
 
     public override void Enter()
     {
