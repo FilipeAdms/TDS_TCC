@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8286881579393325814}
   - component: {fileID: 8376193521812762627}
   - component: {fileID: 8768627907979372917}
+  - component: {fileID: 4408343186632908311}
   - component: {fileID: 8214489409440278786}
   - component: {fileID: 4499986771363205354}
   - component: {fileID: 6125768640198169357}
@@ -183,6 +184,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.3, y: 0.5}
   m_EdgeRadius: 0
+--- !u!114 &4408343186632908311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7481735788027894725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e20db99bdee6d1d44803ab33886f9d37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &8214489409440278786
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -237,3 +250,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mahhorBars: {fileID: 4499986771363205354}
+  patrolPoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
