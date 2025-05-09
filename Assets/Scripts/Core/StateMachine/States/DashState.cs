@@ -14,7 +14,6 @@ public class DashState : State
     public override void Enter() 
     {
         isDashing = true;
-        unit.trailRenderer.emitting = true;
         dashDirection = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
 
         if (dashDirection == Vector2.zero)
@@ -36,7 +35,6 @@ public class DashState : State
         yield return new WaitForSeconds(dashDuration);
         isDashing = false;
         unit.Rigidbody2d.velocity = Vector2.zero;
-        unit.trailRenderer.emitting = false;
         unit.ChangeState<IdleState>();
     }
 }

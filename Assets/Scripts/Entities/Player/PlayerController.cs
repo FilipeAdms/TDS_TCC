@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -16,7 +17,6 @@ public class PlayerController : MonoBehaviour
 
         playerBars.SetMaxHealth(status.maxHealth); // Define a barra de vida inicial
         playerBars.SetHealth(status.currentHealth); // Atualiza a barra de vida inicial
-        unit.trailRenderer.emitting = false; // Desativa o TrailRenderer no início
     }
     // Update is called once per frame
     void Update()
@@ -26,6 +26,11 @@ public class PlayerController : MonoBehaviour
             canAttack = false;
             Attack();
         }
+        if (status.GetCurrent(AttributeType.currentHealth) <= 0)
+        {
+            SceneManager.LoadScene("Menu");
+
+        }
     }
 
     private void Attack()
@@ -33,6 +38,5 @@ public class PlayerController : MonoBehaviour
         Debug.Log("sla eu: "+ Equals(unit));
         unit.ChangeState<AttackState>();
     }
-
 
 }

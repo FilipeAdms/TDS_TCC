@@ -30,7 +30,7 @@ public class StatusComponent : MonoBehaviour
     {
         // Adiciona os atributos iniciais
         attributeSet.AddAttribute(AttributeType.currentHealth, currentHealth);
-        attributeSet.AddAttribute(AttributeType.maxhealth, maxHealth);
+        attributeSet.AddAttribute(AttributeType.maxHealth, maxHealth);
         attributeSet.AddAttribute(AttributeType.currentAura, currentAura);
         attributeSet.AddAttribute(AttributeType.maxAura, maxAura);
         attributeSet.AddAttribute(AttributeType.currentMoveSpeed, currentMoveSpeed);

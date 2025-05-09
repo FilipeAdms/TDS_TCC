@@ -5,7 +5,7 @@ using UnityEngine;
 public enum AttributeType //enum serve para definir um conjunto de constantes nomeadas
 {
     currentHealth,
-    maxhealth,
+    maxHealth,
     currentAura,
     maxAura,
     currentMoveSpeed,

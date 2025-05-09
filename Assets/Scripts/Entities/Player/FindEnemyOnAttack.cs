@@ -64,7 +64,7 @@ public class FindEnemyOnAttack : MonoBehaviour
             }
             else
             {
-                enemy.GetComponent<EnemyHealth>().TakeDamage(10);
+                enemy.GetComponent<EnemyHealth>().TakeDamage(3);
             }
                 Debug.Log($"Inimigo encontrado: {enemy.name}");
             

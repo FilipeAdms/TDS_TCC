@@ -12,7 +12,6 @@ public class PlayerStateMachine : MonoBehaviour
     public FindEnemyOnAttack FindEnemyOnAttack { get; private set; } // O script de detecção de inimigos
     public PlayerController PlayerController { get; private set; } // O controlador do jogador
     public PlayerSkillController PlayerSkillController { get; private set; } // O controlador de habilidades do jogador
-    public TrailRenderer trailRenderer { get; private set; } // O TrailRenderer da unidade
 
     private Animator animator; // O Animator da unidade
     //Um dictionery serve para armazenar pares de chave-valor, onde a chave é do tipo Type e o valor é do tipo State
@@ -34,7 +33,6 @@ public class PlayerStateMachine : MonoBehaviour
 
         FindEnemyOnAttack = GetComponent<FindEnemyOnAttack>();
 
-        trailRenderer = GetComponent<TrailRenderer>();
 
     }
 

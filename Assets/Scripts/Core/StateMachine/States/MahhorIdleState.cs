@@ -15,7 +15,7 @@ public class MahhorIdleState : MahhorState
 
     private IEnumerator IdleTime()
     {
-        yield return new WaitForSeconds(3f);
-        unit.ChangeState<MahhorMoveState>();
+        yield return new WaitForSeconds(5f);
+        unit.MahhorSkillController.ChooseSkill();
     }
 }

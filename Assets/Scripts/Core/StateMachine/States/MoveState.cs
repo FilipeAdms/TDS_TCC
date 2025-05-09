@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Experimental.Licensing;
 using UnityEngine;
 
 public class MoveState : State
@@ -29,7 +28,6 @@ public class MoveState : State
             if (vMove != 0 || hMove != 0)
             {
                 DirectionUtils.currentDirection = DirectionUtils.UpdateDirection(hMove, vMove);
-                Debug.Log("Direção Atual: " + DirectionUtils.currentDirection);
                 Move(DirectionUtils.currentDirection);
             }
             else
