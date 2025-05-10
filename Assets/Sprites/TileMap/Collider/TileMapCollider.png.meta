@@ -1,0 +1,635 @@
+fileFormatVersion: 2
+guid: 6c6d74b2a379c684f8f2067080150d26
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TileMapCollider_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 168
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: -11}
+        - {x: -10, y: -16}
+        - {x: 7, y: -16}
+        - {x: 16, y: -13}
+        - {x: 16, y: 2}
+        - {x: 3, y: 14}
+        - {x: -16, y: 3}
+      - - {x: 0, y: 15}
+        - {x: 0, y: 15}
+        - {x: 1, y: 15}
+        - {x: 1, y: 15}
+      physicsShape:
+      - - {x: -16, y: -8}
+        - {x: -1, y: -16}
+        - {x: 1, y: -16}
+        - {x: 16, y: -9}
+        - {x: 16, y: 0}
+        - {x: 0, y: -8}
+        - {x: -16, y: 1}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2936d07d53c5a9b4b9d2a5c50785ff20
+      internalID: -580070568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMapCollider_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 168
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 0, y: 8}
+        - {x: 0, y: 7}
+        - {x: 16, y: 0}
+        - {x: 1, y: -8}
+        - {x: 8, y: -12}
+        - {x: 16, y: -8}
+        - {x: 16, y: 0}
+      tessellationDetail: 1
+      bones: []
+      spriteID: 789c29bb9a3fd9944a45c183d9a37bf4
+      internalID: -2078095477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMapCollider_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 168
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 1, y: 7}
+        - {x: 16, y: 0}
+        - {x: 16, y: 0}
+        - {x: 1, y: 8}
+        - {x: -2, y: 8}
+        - {x: -16, y: 0}
+        - {x: -2, y: 7}
+      tessellationDetail: 1
+      bones: []
+      spriteID: 46276ca1218466e429f2eb861a23d22d
+      internalID: -1841259379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMapCollider_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 168
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -4, y: 6}
+        - {x: -2, y: 8}
+        - {x: -16, y: 1}
+        - {x: -16, y: -8}
+        - {x: -10, y: -12}
+        - {x: -7, y: -12}
+        - {x: -1, y: -7}
+        - {x: -15, y: -1}
+        - {x: -15, y: 1}
+      tessellationDetail: 0.39
+      bones: []
+      spriteID: c07281a6e86eee64bbda5750893cdf82
+      internalID: 1389476613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMapCollider_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 168
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 0, y: -8}
+        - {x: -16, y: 1}
+        - {x: -16, y: -8}
+        - {x: 0, y: -16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a35f5465729f0740aa27994a9fd0cc5
+      internalID: 937619049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMapCollider_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 168
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 0, y: -8}
+        - {x: 0, y: -16}
+        - {x: 16, y: -8}
+        - {x: 16, y: 1}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fa738a6d10b78040beb549611084977
+      internalID: -1513296435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMapCollider_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 168
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 0, y: 8}
+        - {x: 14, y: 0}
+        - {x: 16, y: 0}
+        - {x: 16, y: 1}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c36d9412ae178ed4883e7e93688e29be
+      internalID: 412439400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMapCollider_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 168
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -2, y: 8}
+        - {x: -11, y: 3}
+        - {x: -16, y: 1}
+        - {x: -16, y: 0}
+        - {x: -4, y: 5}
+        - {x: -1, y: 8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce38a19310bec9e43aa805566018dd9c
+      internalID: 658162100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMapCollider_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 168
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 15, y: 1}
+        - {x: -2, y: -16}
+        - {x: 1, y: -16}
+        - {x: 15, y: -9}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1766ad8c01fc2a04897006b6f328019e
+      internalID: -696514654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMapCollider_9
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 168
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -3, y: 8}
+        - {x: -10, y: 1}
+        - {x: -16, y: -8}
+        - {x: -14, y: -6}
+        - {x: -10, y: 0}
+        - {x: -2, y: 7}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 943563a19a332fe4a99d491bc00d223b
+      internalID: 793476082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMapCollider_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 136
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: 4}
+        - {x: -16, y: 0}
+        - {x: -15, y: -1}
+        - {x: -10, y: -4}
+        - {x: 0, y: -9}
+        - {x: -7, y: -5}
+        - {x: -4, y: -2}
+        - {x: 0, y: -1}
+        - {x: 0, y: 8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52c4112f8b35c334f8e16a362e92b032
+      internalID: -412293536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMapCollider_11
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 136
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 8, y: -4}
+        - {x: 1, y: -8}
+        - {x: -1, y: -8}
+        - {x: -6, y: -5}
+        - {x: -16, y: -1}
+        - {x: -9, y: -5}
+        - {x: -1, y: -9}
+        - {x: 1, y: -9}
+        - {x: 9, y: -5}
+        - {x: 16, y: -1}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5a8da753cafa51449974c67db84f621
+      internalID: -1797460362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMapCollider_12
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 136
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 0, y: 8}
+        - {x: 0, y: -1}
+        - {x: 8, y: -4}
+        - {x: 0, y: -9}
+        - {x: 16, y: -2}
+        - {x: 14, y: 0}
+        - {x: 11, y: 2}
+        - {x: 6, y: 5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52bb7f7f4d659e94caebbe94fecfbfce
+      internalID: 1980170262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMapCollider_13
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 136
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 2, y: 8}
+        - {x: -1, y: 8}
+        - {x: -6, y: 5}
+        - {x: -16, y: 0}
+        - {x: -16, y: -2}
+        - {x: -9, y: -5}
+        - {x: 0, y: -1}
+        - {x: 7, y: -4}
+        - {x: 16, y: -1}
+        - {x: 14, y: 1}
+        - {x: 8, y: 5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 717c89faabfe80245921e5e10bfe3d2c
+      internalID: 1314388120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMapCollider_14
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 136
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -7, y: -6}
+        - {x: 0, y: -9}
+        - {x: -1, y: -7}
+        - {x: -16, y: 0}
+        - {x: -16, y: -1}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40c5548c23de6d2408d922228e8b562b
+      internalID: -788843362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMapCollider_15
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 136
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 0, y: -9}
+        - {x: 9, y: -5}
+        - {x: 16, y: 0}
+        - {x: 5, y: -5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2514d82283ac6b24ab1d4a12b84d4bab
+      internalID: -372604773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMapCollider_16
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 136
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 0, y: 9}
+        - {x: 3, y: 6}
+        - {x: 10, y: 2}
+        - {x: 16, y: 0}
+        - {x: 16, y: 1}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 904fb4623472a8a468a7f1d46ccf4186
+      internalID: -925185122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMapCollider_17
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 136
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: 1}
+        - {x: -16, y: 0}
+        - {x: -5, y: 5}
+        - {x: 0, y: 9}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1c65f6f7d329aa4ea936d8e8b7f319d
+      internalID: 295556128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      TileMapCollider_0: -580070568
+      TileMapCollider_1: -2078095477
+      TileMapCollider_10: -412293536
+      TileMapCollider_11: -1797460362
+      TileMapCollider_12: 1980170262
+      TileMapCollider_13: 1314388120
+      TileMapCollider_14: -788843362
+      TileMapCollider_15: -372604773
+      TileMapCollider_16: -925185122
+      TileMapCollider_17: 295556128
+      TileMapCollider_2: -1841259379
+      TileMapCollider_3: 1389476613
+      TileMapCollider_4: 937619049
+      TileMapCollider_5: -1513296435
+      TileMapCollider_6: 412439400
+      TileMapCollider_7: 658162100
+      TileMapCollider_8: -696514654
+      TileMapCollider_9: 793476082
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
