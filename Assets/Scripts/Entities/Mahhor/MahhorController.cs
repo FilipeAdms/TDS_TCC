@@ -19,21 +19,19 @@ public class MahhorController : MonoBehaviour
         status = GetComponent<StatusComponent>();
         unit = GetComponent<MahhorStateMachine>();
 
-        status.Modify(AttributeType.currentHealth, 300);
-        status.Modify(AttributeType.maxHealth, 300);
+        status.ModifyCurrentValue(AttributeType.currentHealth, 300);
+        status.ModifyBaseValue(AttributeType.maxHealth, 300);
 
         mahhorBars.SetMaxHealth(status.maxHealth);
         mahhorBars.SetHealth(status.currentHealth);
 
-        skillController.ChooseSkill();
     }
 
     private void Update()
     {
-        if (status.GetCurrent(AttributeType.currentHealth) <= 0)
+        if (status.currentHealth < 1)
         {
             SceneManager.LoadScene("Menu");
-
         }
     }
 

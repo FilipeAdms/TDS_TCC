@@ -12,29 +12,16 @@ public class Stalagmit : MonoBehaviour
     public float stalagmitAmount;
     private Collider2D[] playerDetection;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     
     // O método RangeDetection serve para detectar se o jogador está dentro da área de alcance da habilidade
     public void RangeDetection()
     {
-        Debug.Log("Tentando Detectar o jogador");
         playerDetection = Physics2D.OverlapCircleAll(transform.position, stalagmitRange, playerMask);
 
         foreach (Collider2D collider in playerDetection)
         {
             if (collider.CompareTag("Player"))
             {
-        Debug.Log("Jogador Detectado, iniciando Corrotina");
                 StartCoroutine(SpawnCooldown(collider));
                 StartCoroutine(Cooldown());
             }
@@ -55,6 +42,7 @@ public class Stalagmit : MonoBehaviour
     private IEnumerator Cooldown()
     {
         yield return new WaitForSeconds(5f);
+        SkillController.canAct = true;
         SkillController.ChooseSkill();
     }
 }

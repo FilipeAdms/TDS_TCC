@@ -11,7 +11,6 @@ public class MahhorStateMachine : MonoBehaviour
     public Transform Transforms { get; private set; } // O Transform da unidade
     public FindEnemyOnAttack FindEnemyOnAttack { get; private set; } // O script de detecção de inimigos
     public MahhorController MahhorController { get; private set; } // O controlador do Mahhor
-
     public MahhorSkillController MahhorSkillController { get; private set; } // O controlador da skill do Mahhor
 
     private Animator animator; // O Animator da unidade

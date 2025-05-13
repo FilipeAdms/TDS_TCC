@@ -2,20 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum AttributeType //enum serve para definir um conjunto de constantes nomeadas
+public enum AttributeType
 {
     currentHealth,
-    maxHealth,
     currentAura,
-    maxAura,
     currentMoveSpeed,
-    baseMoveSpeed,
     currentAttackDamage,
-    baseAttackDamage,
     currentDefense,
-    baseDefense,
-    currentHealthRegen,
-    baseHealthRegen,
     currentAuraRegen,
-    baseAuraRegen,
+    currentHealthRegen,
+    maxHealth,
+    maxAura,
+    baseMoveSpeed,
+    baseAttackDamage,
+    baseDefense,
+    baseHealthRegen,
+    baseAuraRegen
 }

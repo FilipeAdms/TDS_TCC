@@ -25,36 +25,23 @@ public class FindEnemyOnAttack : MonoBehaviour
             case Directions.Right:
                 posX = unitPosition.position.x + 0.75f;
                 posY = unitPosition.position.y;
-                Debug.Log($"Direção: {DirectionUtils.currentDirection}");
-                Debug.Log($"Posição X: {posX} e Posição Y: {posY}");
-                Debug.Log($"Posição: {unitPosition.position}");
                 break;
             case Directions.Left:
                 posX = unitPosition.position.x - 0.75f;
                 posY = unitPosition.position.y;
-                Debug.Log($"Direção: {DirectionUtils.currentDirection}");
-                Debug.Log($"Posição X: {posX} e Posição Y: {posY}");
-                Debug.Log($"Posição: {unitPosition.position}");
                 break;
             case Directions.Up:
                 posX = unitPosition.position.x;
                 posY = unitPosition.position.y + 0.25f;
-                Debug.Log($"Direção: {DirectionUtils.currentDirection}");
-                Debug.Log($"Posição X: {posX} e Posição Y: {posY}");
-                Debug.Log($"Posição: {unitPosition.position}");
                 break;
             case Directions.Down:
                 posX = unitPosition.position.x;
                 posY = unitPosition.position.y -0.5f;
-                Debug.Log($"Direção: {DirectionUtils.currentDirection}");
-                Debug.Log($"Posição X: {posX} e Posição Y: {posY}");
-                Debug.Log($"Posição: {unitPosition.position}");
                 break;
         }
         
         // Ativa detecção de inimigos
         findEnemy = Physics2D.OverlapCircleAll(new Vector2(posX, posY), 0.5f, layerMask); // Verifica se há inimigos dentro do raio de 1 unidade
-        Debug.Log($"Atacando para {DirectionUtils.currentDirection}: {findEnemy.Length} inimigos encontrados");
 
         foreach (Collider2D enemy in findEnemy)
         {
@@ -66,7 +53,6 @@ public class FindEnemyOnAttack : MonoBehaviour
             {
                 enemy.GetComponent<EnemyHealth>().TakeDamage(3);
             }
-                Debug.Log($"Inimigo encontrado: {enemy.name}");
             
         }
     }

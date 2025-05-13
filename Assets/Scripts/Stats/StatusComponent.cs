@@ -5,9 +5,7 @@ using UnityEngine;
 // StatusComponent é um componente que gerencia os atributos de uma unidade
 public class StatusComponent : MonoBehaviour
 {
-    [Header("Atributos da Unidade")]
-    public AttributeSet attributeSet = new();
-
+    // Valores atuais
     [Header("Atributos atuais")]
     public float currentHealth = 100f;
     public float currentAura = 100f;
@@ -16,6 +14,8 @@ public class StatusComponent : MonoBehaviour
     public float currentDefense = 20f;
     public float currentAuraRegen = 1.25f;
     public float currentHealthRegen = 1.75f;
+
+    // Valores máximos
     [Header("Atributos Base")]
     public float maxHealth = 100f;
     public float maxAura = 100f;
@@ -25,34 +25,77 @@ public class StatusComponent : MonoBehaviour
     public float baseHealthRegen = 1.25f;
     public float baseAuraRegen = 1.75f;
 
+    // Valores iniciais (para usar como referência)
+    [Header("Atributos Base")]
+    public float inicialHealth = 100f;
+    public float inicialAura = 100f;
+    public float inicialMoveSpeed = 2.5f;
+    public float inicialAttackDamage = 20f;
+    public float inicialDefense = 20f;
+    public float inicialHealthRegen = 1.25f;
+    public float inicialAuraRegen = 1.75f;
 
-    private void Awake() // 
+    public void ModifyCurrentValue(AttributeType type, float value) // Modifica o valor de um atributo
     {
-        // Adiciona os atributos iniciais
-        attributeSet.AddAttribute(AttributeType.currentHealth, currentHealth);
-        attributeSet.AddAttribute(AttributeType.maxHealth, maxHealth);
-        attributeSet.AddAttribute(AttributeType.currentAura, currentAura);
-        attributeSet.AddAttribute(AttributeType.maxAura, maxAura);
-        attributeSet.AddAttribute(AttributeType.currentMoveSpeed, currentMoveSpeed);
-        attributeSet.AddAttribute(AttributeType.baseMoveSpeed, baseMoveSpeed);
-        attributeSet.AddAttribute(AttributeType.currentAttackDamage, currentAttackDamage);
-        attributeSet.AddAttribute(AttributeType.baseAttackDamage, baseAttackDamage);
-        attributeSet.AddAttribute(AttributeType.currentDefense, currentDefense);
-        attributeSet.AddAttribute(AttributeType.baseDefense, baseDefense);
-        attributeSet.AddAttribute(AttributeType.currentHealthRegen, currentHealthRegen);
-        attributeSet.AddAttribute(AttributeType.baseHealthRegen, baseHealthRegen);
-        attributeSet.AddAttribute(AttributeType.currentAuraRegen, currentAuraRegen);
-        attributeSet.AddAttribute(AttributeType.baseAuraRegen, baseAuraRegen);
+        switch (type)
+        {
+            case AttributeType.currentHealth:
+                currentHealth = currentHealth + value;
+                break;
+            case AttributeType.currentAura:
+                currentAura = currentAura + value;
+                break;
+            case AttributeType.currentMoveSpeed:
+                currentMoveSpeed = currentMoveSpeed + value;
+                break;
+            case AttributeType.currentAttackDamage:
+                currentAttackDamage = currentAttackDamage + value;
+                break;
+            case AttributeType.currentDefense:
+                currentDefense = currentDefense + value;
+                break;
+            case AttributeType.currentAuraRegen:
+                currentAuraRegen = currentAuraRegen + value;
+                break;
+            case AttributeType.currentHealthRegen:
+                currentHealthRegen = currentHealthRegen + value;
+                break;
+            default:
+                Debug.LogError("Tipo de atributo inválido: " + type);
+                break;
+        }
     }
-
-    public float GetCurrent(AttributeType type) // Pega o valor atual de um atributo
+    public void ModifyBaseValue(AttributeType type, float value)
     {
-        return attributeSet.GetCurrentValue(type);
-    }
-
-    public void Modify(AttributeType type, float value) // Modifica o valor de um atributo
-    {
-        attributeSet.ModifyAttribute(type, value);
+        switch (type)
+        {
+            case AttributeType.maxHealth:
+                maxHealth = Mathf.Max(maxHealth + value, 0);
+                currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
+                break;
+            case AttributeType.maxAura:
+                maxAura = Mathf.Max(maxAura + value, 0);
+                currentAura = Mathf.Clamp(currentAura, 0, maxAura);
+                break;
+            case AttributeType.baseMoveSpeed:
+                baseMoveSpeed = Mathf.Max(baseMoveSpeed + value, 0);
+                break;
+            case AttributeType.baseAttackDamage:
+                baseAttackDamage = Mathf.Max(baseAttackDamage + value, 0);
+                break;
+            case AttributeType.baseDefense:
+                baseDefense = Mathf.Max(baseDefense + value, 0);
+                break;
+            case AttributeType.baseAuraRegen:
+                baseAuraRegen = Mathf.Max(baseAuraRegen + value, 0);
+                break;
+            case AttributeType.baseHealthRegen:
+                baseHealthRegen = Mathf.Max(baseHealthRegen + value, 0);
+                break;
+            default:
+                Debug.LogError("Tipo de atributo inválido: " + type);
+                break;
+        }
     }
 
 }

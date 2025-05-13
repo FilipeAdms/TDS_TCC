@@ -5,7 +5,6 @@ using UnityEngine;
 public class MoveState : State
 {
     public MoveState(PlayerStateMachine unit) : base(unit) { } // Construtor que recebe a unidade
-    public EntityComponent entityComponent;
 
     private float vMove;
     private float hMove;
@@ -13,13 +12,11 @@ public class MoveState : State
 
     public override void Enter()
     {
-        // Inicializa o EntityComponent
-        entityComponent = unit.GetComponent<EntityComponent>();
     }
 
     public override void Tick()
     {
-        if (entityComponent != null)
+        if (unit.Rigidbody2d != null)
         {
             // Captura os inputs do jogador
             vMove = Input.GetAxisRaw("Vertical");
@@ -32,7 +29,7 @@ public class MoveState : State
             }
             else
             {
-                entityComponent.Rigidbody.velocity = Vector2.zero;
+                unit.Rigidbody2d.velocity = Vector2.zero;
                 unit.ChangeState<IdleState>();
             }
         }
@@ -40,7 +37,7 @@ public class MoveState : State
 
     public override void Exit()
     {
-        entityComponent.Rigidbody.velocity = Vector2.zero;
+        unit.Rigidbody2d.velocity = Vector2.zero;
     }
 
     private void Move(Directions currentDirection)
@@ -49,7 +46,7 @@ public class MoveState : State
         Vector2 direction = new Vector2(hMove, vMove).normalized;
 
         // Aplica a velocidade ao Rigidbody
-        entityComponent.Rigidbody.velocity = (unit.Status.currentMoveSpeed * direction);
+        unit.Rigidbody2d.velocity = (unit.Status.currentMoveSpeed * direction);
 
         switch (currentDirection)
             {
@@ -60,11 +57,11 @@ public class MoveState : State
                     unit.GetAnimator().Play("KenzenRunningDown");
                 break;
                 case Directions.Left:
-                    entityComponent.Transform.rotation = Quaternion.Euler(0, 180, 0);
+                    unit.Transforms.rotation = Quaternion.Euler(0, 180, 0);
                     unit.GetAnimator().Play("KenzenRunning");
                 break;
                 case Directions.Right:
-                    entityComponent.Transform.rotation = Quaternion.Euler(0, 0, 0);
+                    unit.Transforms.rotation = Quaternion.Euler(0, 0, 0);
                     unit.GetAnimator().Play("KenzenRunning");
                 break;
                 case Directions.None:

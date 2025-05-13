@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
             canAttack = false;
             Attack();
         }
-        if (status.GetCurrent(AttributeType.currentHealth) <= 0)
+        if (status.currentHealth < 1)
         {
             SceneManager.LoadScene("Menu");
 
@@ -35,7 +35,6 @@ public class PlayerController : MonoBehaviour
 
     private void Attack()
     {
-        Debug.Log("sla eu: "+ Equals(unit));
         unit.ChangeState<AttackState>();
     }
 

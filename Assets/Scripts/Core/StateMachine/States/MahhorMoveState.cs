@@ -6,15 +6,11 @@ using UnityEngine;
 public class MahhorMoveState : MahhorState
 {
     public MahhorMoveState(MahhorStateMachine unit) : base(unit) { } // Construtor que recebe a unidade
-    public EntityComponent entityComponent;
 
     int patrolIndex;
 
     public override void Enter()
     {
-        // Inicializa o EntityComponent
-        entityComponent = unit.GetComponent<EntityComponent>();        
-
         patrolIndex = Random.Range(0, 4);
     }
 
@@ -34,6 +30,7 @@ public class MahhorMoveState : MahhorState
     public override void Exit()
     {
         unit.Rigidbody2d.velocity = Vector2.zero;
+        unit.MahhorSkillController.canAct = true;
     }
 
     private void MoveTo(Vector2 targetPosition)

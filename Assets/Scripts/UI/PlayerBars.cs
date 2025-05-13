@@ -23,8 +23,8 @@ public class PlayerBars : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
-        float posDamage = (damage * 100) / (status.GetCurrent(AttributeType.currentDefense) + 100);
-        status.Modify(AttributeType.currentHealth, -posDamage);
-        SetHealth(status.GetCurrent(AttributeType.currentHealth));
+        float posDamage = (damage * 100) / (status.currentDefense + 100);
+        status.ModifyCurrentValue(AttributeType.currentHealth, -posDamage);
+        SetHealth(status.currentHealth);
     }
 }

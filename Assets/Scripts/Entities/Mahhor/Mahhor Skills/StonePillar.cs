@@ -46,6 +46,7 @@ public class StonePillar : MonoBehaviour
     private IEnumerator Cooldown()
     {
         yield return new WaitForSeconds(5f);
+        SkillController.canAct = true;
         SkillController.ChooseSkill();
     }
 }
