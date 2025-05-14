@@ -7,7 +7,7 @@ public class Stalagmit : MonoBehaviour
     [SerializeField] private Transform playerPosition;
     [SerializeField] private LayerMask playerMask;
     [SerializeField] private GameObject stalagmitPrefab;
-    [SerializeField] private MahhorSkillController SkillController;
+    [SerializeField] private MahhorSkillController skillController;
     public float stalagmitRange;
     public float stalagmitAmount;
     private Collider2D[] playerDetection;
@@ -23,11 +23,13 @@ public class Stalagmit : MonoBehaviour
             if (collider.CompareTag("Player"))
             {
                 StartCoroutine(SpawnCooldown(collider));
-                StartCoroutine(Cooldown());
+                Debug.Log("Stalagmite Cooldown iniciado");
+                skillController.StartCoroutine("StalagmitCooldown");
             }
         }
     }
 
+    //Espaço de tempo para invocar um pilar depois do outro
     private IEnumerator SpawnCooldown(Collider2D collider)
     {
         for (int i = 0; i <= stalagmitAmount; i++)
@@ -36,13 +38,8 @@ public class Stalagmit : MonoBehaviour
             yield return new WaitForSeconds(0.2f);
             Instantiate(stalagmitPrefab, playerCurrentPosition, Quaternion.identity);
             yield return new WaitForSeconds(0.25f);
-
         }
+        skillController.canAct = true;
     }
-    private IEnumerator Cooldown()
-    {
-        yield return new WaitForSeconds(5f);
-        SkillController.canAct = true;
-        SkillController.ChooseSkill();
-    }
+
 }

@@ -9,11 +9,11 @@ public class MahhorStateMachine : MonoBehaviour
     public StatusComponent Status { get; private set; } // O componente de status da unidade
     public Rigidbody2D Rigidbody2d { get; private set; } // O Rigidbody2D da unidade
     public Transform Transforms { get; private set; } // O Transform da unidade
-    public FindEnemyOnAttack FindEnemyOnAttack { get; private set; } // O script de detecção de inimigos
     public MahhorController MahhorController { get; private set; } // O controlador do Mahhor
     public MahhorSkillController MahhorSkillController { get; private set; } // O controlador da skill do Mahhor
 
     private Animator animator; // O Animator da unidade
+
     //Um dictionery serve para armazenar pares de chave-valor, onde a chave é do tipo Type e o valor é do tipo State
     private Dictionary<Type, MahhorState> states; // Dicionário para armazenar os estados
 
@@ -28,8 +28,6 @@ public class MahhorStateMachine : MonoBehaviour
         Rigidbody2d = GetComponent<Rigidbody2D>();
 
         MahhorController = GetComponent<MahhorController>();
-
-        FindEnemyOnAttack = GetComponent<FindEnemyOnAttack>();
 
         MahhorSkillController = GetComponent<MahhorSkillController>();
     }

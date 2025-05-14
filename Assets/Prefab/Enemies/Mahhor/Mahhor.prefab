@@ -226,6 +226,13 @@ MonoBehaviour:
   baseDefense: 20
   baseHealthRegen: 1.25
   baseAuraRegen: 1.75
+  inicialHealth: 100
+  inicialAura: 100
+  inicialMoveSpeed: 2.5
+  inicialAttackDamage: 20
+  inicialDefense: 20
+  inicialHealthRegen: 1.25
+  inicialAuraRegen: 1.75
 --- !u!114 &4499986771363205354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -276,6 +283,8 @@ MonoBehaviour:
   unit: {fileID: 4408343186632908311}
   stalagmit: {fileID: 7720599259090435442}
   stonePillar: {fileID: 3572247114797194996}
+  skillController: {fileID: 0}
+  canAct: 1
 --- !u!114 &7720599259090435442
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -293,7 +302,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   stalagmitPrefab: {fileID: 2730265284468307554, guid: d19a0b2dd01ef094c92e2a7cf3f88165, type: 3}
-  SkillController: {fileID: 133617317494853435}
+  skillController: {fileID: 133617317494853435}
   stalagmitRange: 6
   stalagmitAmount: 4
 --- !u!114 &3572247114797194996

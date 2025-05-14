@@ -7,39 +7,61 @@ public class MahhorSkillController : MonoBehaviour
     [SerializeField] private MahhorStateMachine unit;
     [SerializeField] Stalagmit stalagmit;
     [SerializeField] StonePillar stonePillar;
+    [SerializeField] MahhorSkillController skillController;
+
+    #region Flags
     public bool canAct = true;
-    // Start is called before the first frame update
-    void Start()
+    private bool isStalagmitActive = false;
+    #endregion
+
+    #region CoolDown's
+    private float stalagmitCooldown = 5f;
+    #endregion
+
+    private void Update()
     {
-        
+        //Destinado a testes
     }
 
     public void ChooseSkill()
     {
+        Debug.Log("Escolhendo habilidade");
         if (canAct)
         {
             canAct = false;
             // Gera um número aleatório de 1 a 100 (quando random é com int, ele considera >= X e < y
             // quando é float ele considera >= X e <= Y
             int skillIndex = Random.Range(1, 101);
+            Debug.Log("Numero aleatorio de 1 a 100: "+ skillIndex);
 
-            if (skillIndex <= 33)
+            if (skillIndex <= 10)
             {
+                Debug.Log("Escolhendo MahhorMoveState");
                 unit.ChangeState<MahhorMoveState>();
             }
-            else if (skillIndex > 33 && skillIndex <= 66)
+            else if (skillIndex > 11 && skillIndex <= 25 && !isStalagmitActive)
             {
+                Debug.Log("Escolhendo stalagmit");
+                isStalagmitActive = true;
                 stalagmit.RangeDetection();
             }
-            else if (skillIndex > 66)
+            else if (skillIndex > 25 && skillIndex <= 45)
             {
+                Debug.Log("Escolhendo stonePillar");
                 stonePillar.RangeDetection();
             }
-            //else if(skillIndex > 40)
-            //{
-            //unit.ChangeState<MahhorAttackState>();
-            //}
+            else if(skillIndex > 45)
+            {
+                Debug.Log("Escolhendo MahhorAttackState");
+                unit.ChangeState<MahhorAttackState>();
+            }
         }
+    }
+
+    private IEnumerator StalagmitCooldown()
+    {
+        yield return new WaitForSeconds(stalagmitCooldown);
+        isStalagmitActive = false;
     }
 
 }

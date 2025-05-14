@@ -3,16 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{781800C5-ABA7-784B-613D-4DD460578AE7}|Assembly-CSharp.csproj|C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\assets\\scripts\\stats\\statuscomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{781800C5-ABA7-784B-613D-4DD460578AE7}|Assembly-CSharp.csproj|C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\assets\\scripts\\entities\\player\\findenemyonattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{781800C5-ABA7-784B-613D-4DD460578AE7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\entities\\player\\findenemyonattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{781800C5-ABA7-784B-613D-4DD460578AE7}|Assembly-CSharp.csproj|C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\assets\\scripts\\entities\\mahhor\\mahhorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{781800C5-ABA7-784B-613D-4DD460578AE7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\entities\\mahhor\\mahhorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{781800C5-ABA7-784B-613D-4DD460578AE7}|Assembly-CSharp.csproj|C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\assets\\scripts\\core\\statemachine\\units\\mahhorstatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{781800C5-ABA7-784B-613D-4DD460578AE7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\statemachine\\units\\mahhorstatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{781800C5-ABA7-784B-613D-4DD460578AE7}|Assembly-CSharp.csproj|C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\assets\\scripts\\entities\\mahhor\\mahhor skills\\stalagmit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{781800C5-ABA7-784B-613D-4DD460578AE7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\entities\\mahhor\\mahhor skills\\stalagmit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{781800C5-ABA7-784B-613D-4DD460578AE7}|Assembly-CSharp.csproj|C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\assets\\scripts\\entities\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{781800C5-ABA7-784B-613D-4DD460578AE7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\entities\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{781800C5-ABA7-784B-613D-4DD460578AE7}|Assembly-CSharp.csproj|C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\assets\\scripts\\entities\\mahhor\\mahhorskillcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{781800C5-ABA7-784B-613D-4DD460578AE7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\entities\\mahhor\\mahhorskillcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{781800C5-ABA7-784B-613D-4DD460578AE7}|Assembly-CSharp.csproj|C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\assets\\scripts\\entities\\mahhor\\mahhor skills\\stonepillar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{781800C5-ABA7-784B-613D-4DD460578AE7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\entities\\mahhor\\mahhor skills\\stonepillar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{781800C5-ABA7-784B-613D-4DD460578AE7}|Assembly-CSharp.csproj|C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\assets\\scripts\\ui\\mahhorbars.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{781800C5-ABA7-784B-613D-4DD460578AE7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\mahhorbars.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{781800C5-ABA7-784B-613D-4DD460578AE7}|Assembly-CSharp.csproj|c:\\users\\filipe antony\\documents\\aura_jogo\\tds_kenzen_tales\\assets\\scripts\\stats\\statuscomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{781800C5-ABA7-784B-613D-4DD460578AE7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\stats\\statuscomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{781800C5-ABA7-784B-613D-4DD460578AE7}|Assembly-CSharp.csproj|C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\assets\\scripts\\stats\\attributetype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{781800C5-ABA7-784B-613D-4DD460578AE7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\stats\\attributetype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{781800C5-ABA7-784B-613D-4DD460578AE7}|Assembly-CSharp.csproj|c:\\users\\filipe antony\\documents\\aura_jogo\\tds_kenzen_tales\\assets\\scripts\\entities\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{781800C5-ABA7-784B-613D-4DD460578AE7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\entities\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{781800C5-ABA7-784B-613D-4DD460578AE7}|Assembly-CSharp.csproj|C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\assets\\scripts\\entities\\enemies\\enemyhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,18 +49,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{781800C5-ABA7-784B-613D-4DD460578AE7}|Assembly-CSharp.csproj|C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\assets\\scripts\\ui\\playerbars.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{781800C5-ABA7-784B-613D-4DD460578AE7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\playerbars.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{781800C5-ABA7-784B-613D-4DD460578AE7}|Assembly-CSharp.csproj|C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\assets\\scripts\\entities\\mahhor\\mahhorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{781800C5-ABA7-784B-613D-4DD460578AE7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\entities\\mahhor\\mahhorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{781800C5-ABA7-784B-613D-4DD460578AE7}|Assembly-CSharp.csproj|C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\assets\\scripts\\ui\\mahhorbars.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{781800C5-ABA7-784B-613D-4DD460578AE7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\mahhorbars.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{781800C5-ABA7-784B-613D-4DD460578AE7}|Assembly-CSharp.csproj|C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\assets\\scripts\\entities\\player\\findenemyonattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{781800C5-ABA7-784B-613D-4DD460578AE7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\entities\\player\\findenemyonattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{781800C5-ABA7-784B-613D-4DD460578AE7}|Assembly-CSharp.csproj|C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\assets\\scripts\\core\\statemachine\\states\\attackstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -45,14 +61,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{781800C5-ABA7-784B-613D-4DD460578AE7}|Assembly-CSharp.csproj|C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\assets\\scripts\\core\\statemachine\\states\\movestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{781800C5-ABA7-784B-613D-4DD460578AE7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\statemachine\\states\\movestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{781800C5-ABA7-784B-613D-4DD460578AE7}|Assembly-CSharp.csproj|C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\assets\\scripts\\entities\\mahhor\\mahhorskillcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{781800C5-ABA7-784B-613D-4DD460578AE7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\entities\\mahhor\\mahhorskillcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{781800C5-ABA7-784B-613D-4DD460578AE7}|Assembly-CSharp.csproj|C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\assets\\scripts\\core\\statemachine\\units\\mahhorstatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{781800C5-ABA7-784B-613D-4DD460578AE7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\statemachine\\units\\mahhorstatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{781800C5-ABA7-784B-613D-4DD460578AE7}|Assembly-CSharp.csproj|C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\assets\\scripts\\core\\statemachine\\states\\mahhorattackstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -87,16 +95,8 @@
       "RelativeMoniker": "D:0:0:{781800C5-ABA7-784B-613D-4DD460578AE7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\entities\\mahhor\\mahhor skills\\stalagmitdamage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{781800C5-ABA7-784B-613D-4DD460578AE7}|Assembly-CSharp.csproj|C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\assets\\scripts\\entities\\mahhor\\mahhor skills\\stonepillar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{781800C5-ABA7-784B-613D-4DD460578AE7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\entities\\mahhor\\mahhor skills\\stonepillar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{781800C5-ABA7-784B-613D-4DD460578AE7}|Assembly-CSharp.csproj|C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\assets\\scripts\\core\\statemachine\\states\\mahhoridlestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{781800C5-ABA7-784B-613D-4DD460578AE7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\statemachine\\states\\mahhoridlestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{781800C5-ABA7-784B-613D-4DD460578AE7}|Assembly-CSharp.csproj|C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\assets\\scripts\\entities\\mahhor\\mahhor skills\\stalagmit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{781800C5-ABA7-784B-613D-4DD460578AE7}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\entities\\mahhor\\mahhor skills\\stalagmit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{781800C5-ABA7-784B-613D-4DD460578AE7}|Assembly-CSharp.csproj|C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\assets\\scripts\\core\\direction\\directions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -122,7 +122,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 254,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -134,84 +134,124 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "MahhorController.cs",
+              "DocumentMoniker": "C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\Assets\\Scripts\\Entities\\Mahhor\\MahhorController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Entities\\Mahhor\\MahhorController.cs",
+              "ToolTip": "C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\Assets\\Scripts\\Entities\\Mahhor\\MahhorController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Entities\\Mahhor\\MahhorController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T20:11:48.913Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "PlayerController.cs",
               "DocumentMoniker": "C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\Assets\\Scripts\\Entities\\Player\\PlayerController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Entities\\Player\\PlayerController.cs",
               "ToolTip": "C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\Assets\\Scripts\\Entities\\Player\\PlayerController.cs",
               "RelativeToolTip": "Assets\\Scripts\\Entities\\Player\\PlayerController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBwAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABwAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-12T22:53:15.979Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AttributeType.cs",
-              "DocumentMoniker": "C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\Assets\\Scripts\\Stats\\AttributeType.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Stats\\AttributeType.cs",
-              "ToolTip": "C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\Assets\\Scripts\\Stats\\AttributeType.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Stats\\AttributeType.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAHAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "MahhorSkillController.cs",
+              "DocumentMoniker": "C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\Assets\\Scripts\\Entities\\Mahhor\\MahhorSkillController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Entities\\Mahhor\\MahhorSkillController.cs",
+              "ToolTip": "C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\Assets\\Scripts\\Entities\\Mahhor\\MahhorSkillController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Entities\\Mahhor\\MahhorSkillController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T22:40:40.856Z",
+              "WhenOpened": "2025-05-07T22:37:22.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Stalagmit.cs",
+              "DocumentMoniker": "C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\Assets\\Scripts\\Entities\\Mahhor\\Mahhor Skills\\Stalagmit.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Entities\\Mahhor\\Mahhor Skills\\Stalagmit.cs",
+              "ToolTip": "C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\Assets\\Scripts\\Entities\\Mahhor\\Mahhor Skills\\Stalagmit.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Entities\\Mahhor\\Mahhor Skills\\Stalagmit.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwCwAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T03:56:36.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "StonePillar.cs",
+              "DocumentMoniker": "C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\Assets\\Scripts\\Entities\\Mahhor\\Mahhor Skills\\StonePillar.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Entities\\Mahhor\\Mahhor Skills\\StonePillar.cs",
+              "ToolTip": "C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\Assets\\Scripts\\Entities\\Mahhor\\Mahhor Skills\\StonePillar.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Entities\\Mahhor\\Mahhor Skills\\StonePillar.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAgwDAAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T03:53:19.061Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "StatusComponent.cs",
-              "DocumentMoniker": "C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\Assets\\Scripts\\Stats\\StatusComponent.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Stats\\StatusComponent.cs",
-              "ToolTip": "C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\Assets\\Scripts\\Stats\\StatusComponent.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Stats\\StatusComponent.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAgwDcAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T22:15:25.168Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
               "Title": "FindEnemyOnAttack.cs",
               "DocumentMoniker": "C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\Assets\\Scripts\\Entities\\Player\\FindEnemyOnAttack.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Entities\\Player\\FindEnemyOnAttack.cs",
               "ToolTip": "C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\Assets\\Scripts\\Entities\\Player\\FindEnemyOnAttack.cs",
               "RelativeToolTip": "Assets\\Scripts\\Entities\\Player\\FindEnemyOnAttack.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAjwCUAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T20:21:17.515Z"
+              "WhenOpened": "2025-05-01T20:21:17.515Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
+              "Title": "MahhorStateMachine.cs",
+              "DocumentMoniker": "C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\Assets\\Scripts\\Core\\StateMachine\\Units\\MahhorStateMachine.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\StateMachine\\Units\\MahhorStateMachine.cs",
+              "ToolTip": "C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\Assets\\Scripts\\Core\\StateMachine\\Units\\MahhorStateMachine.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Core\\StateMachine\\Units\\MahhorStateMachine.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAtwE8AAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T20:17:44.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "MahhorBars.cs",
               "DocumentMoniker": "C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\Assets\\Scripts\\UI\\MahhorBars.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\MahhorBars.cs",
               "ToolTip": "C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\Assets\\Scripts\\UI\\MahhorBars.cs",
               "RelativeToolTip": "Assets\\Scripts\\UI\\MahhorBars.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABwAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-01T20:07:43.259Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "EnemyHealth.cs",
-              "DocumentMoniker": "C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\Assets\\Scripts\\Entities\\Enemies\\EnemyHealth.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Entities\\Enemies\\EnemyHealth.cs",
-              "ToolTip": "C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\Assets\\Scripts\\Entities\\Enemies\\EnemyHealth.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Entities\\Enemies\\EnemyHealth.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAA1AAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "StatusComponent.cs",
+              "DocumentMoniker": "C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\Assets\\Scripts\\Stats\\StatusComponent.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Stats\\StatusComponent.cs",
+              "ToolTip": "C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\Assets\\Scripts\\Stats\\StatusComponent.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Stats\\StatusComponent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T04:31:30.831Z",
+              "WhenOpened": "2025-04-16T22:15:25.168Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "AttackState.cs",
               "DocumentMoniker": "C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\Assets\\Scripts\\Core\\StateMachine\\States\\AttackState.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\StateMachine\\States\\AttackState.cs",
@@ -223,20 +263,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MahhorController.cs",
-              "DocumentMoniker": "C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\Assets\\Scripts\\Entities\\Mahhor\\MahhorController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Entities\\Mahhor\\MahhorController.cs",
-              "ToolTip": "C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\Assets\\Scripts\\Entities\\Mahhor\\MahhorController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Entities\\Mahhor\\MahhorController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAZAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "EnemyHealth.cs",
+              "DocumentMoniker": "C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\Assets\\Scripts\\Entities\\Enemies\\EnemyHealth.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Entities\\Enemies\\EnemyHealth.cs",
+              "ToolTip": "C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\Assets\\Scripts\\Entities\\Enemies\\EnemyHealth.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Entities\\Enemies\\EnemyHealth.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T20:11:48.913Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-08T04:31:30.831Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
+              "Title": "AttributeType.cs",
+              "DocumentMoniker": "C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\Assets\\Scripts\\Stats\\AttributeType.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Stats\\AttributeType.cs",
+              "ToolTip": "C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\Assets\\Scripts\\Stats\\AttributeType.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Stats\\AttributeType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T22:40:40.856Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "PlayerBars.cs",
               "DocumentMoniker": "C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\Assets\\Scripts\\UI\\PlayerBars.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\PlayerBars.cs",
@@ -244,12 +295,11 @@
               "RelativeToolTip": "Assets\\Scripts\\UI\\PlayerBars.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABkAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T15:31:08.365Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-01T15:31:08.365Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "MahhorMoveState.cs",
               "DocumentMoniker": "C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\Assets\\Scripts\\Core\\StateMachine\\States\\MahhorMoveState.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\StateMachine\\States\\MahhorMoveState.cs",
@@ -261,7 +311,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "MoveState.cs",
               "DocumentMoniker": "C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\Assets\\Scripts\\Core\\StateMachine\\States\\MoveState.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\StateMachine\\States\\MoveState.cs",
@@ -273,19 +323,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "MahhorSkillController.cs",
-              "DocumentMoniker": "C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\Assets\\Scripts\\Entities\\Mahhor\\MahhorSkillController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Entities\\Mahhor\\MahhorSkillController.cs",
-              "ToolTip": "C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\Assets\\Scripts\\Entities\\Mahhor\\MahhorSkillController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Entities\\Mahhor\\MahhorSkillController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwB4AAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T22:37:22.666Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "MahhorAttackState.cs",
               "DocumentMoniker": "C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\Assets\\Scripts\\Core\\StateMachine\\States\\MahhorAttackState.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\StateMachine\\States\\MahhorAttackState.cs",
@@ -297,19 +335,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "MahhorStateMachine.cs",
-              "DocumentMoniker": "C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\Assets\\Scripts\\Core\\StateMachine\\Units\\MahhorStateMachine.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\StateMachine\\Units\\MahhorStateMachine.cs",
-              "ToolTip": "C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\Assets\\Scripts\\Core\\StateMachine\\Units\\MahhorStateMachine.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Core\\StateMachine\\Units\\MahhorStateMachine.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAuwAwAAABdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T20:17:44.273Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "PlayerStateMachine.cs",
               "DocumentMoniker": "C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\Assets\\Scripts\\Core\\StateMachine\\Units\\PlayerStateMachine.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\StateMachine\\Units\\PlayerStateMachine.cs",
@@ -321,7 +347,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "GameManager.cs",
               "DocumentMoniker": "C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\Assets\\Scripts\\Core\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\GameManager.cs",
@@ -333,7 +359,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "MenuToGame.cs",
               "DocumentMoniker": "C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\Assets\\Scripts\\UI\\MenuToGame.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\MenuToGame.cs",
@@ -345,7 +371,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "DashState.cs",
               "DocumentMoniker": "C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\Assets\\Scripts\\Core\\StateMachine\\States\\DashState.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\StateMachine\\States\\DashState.cs",
@@ -369,7 +395,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "PlayerSkillController.cs",
               "DocumentMoniker": "C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\Assets\\Scripts\\Entities\\Player\\PlayerSkillController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Entities\\Player\\PlayerSkillController.cs",
@@ -381,19 +407,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "StonePillar.cs",
-              "DocumentMoniker": "C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\Assets\\Scripts\\Entities\\Mahhor\\Mahhor Skills\\StonePillar.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Entities\\Mahhor\\Mahhor Skills\\StonePillar.cs",
-              "ToolTip": "C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\Assets\\Scripts\\Entities\\Mahhor\\Mahhor Skills\\StonePillar.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Entities\\Mahhor\\Mahhor Skills\\StonePillar.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAgwAkAAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T03:53:19.061Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "StalagmitDamage.cs",
               "DocumentMoniker": "C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\Assets\\Scripts\\Entities\\Mahhor\\Mahhor Skills\\StalagmitDamage.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Entities\\Mahhor\\Mahhor Skills\\StalagmitDamage.cs",
@@ -405,7 +419,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "StonePillarDamage.cs",
               "DocumentMoniker": "C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\Assets\\Scripts\\Entities\\Mahhor\\Mahhor Skills\\StonePillarDamage.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Entities\\Mahhor\\Mahhor Skills\\StonePillarDamage.cs",
@@ -417,7 +431,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "MahhorIdleState.cs",
               "DocumentMoniker": "C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\Assets\\Scripts\\Core\\StateMachine\\States\\MahhorIdleState.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\StateMachine\\States\\MahhorIdleState.cs",
@@ -426,18 +440,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-07T20:31:43.739Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Stalagmit.cs",
-              "DocumentMoniker": "C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\Assets\\Scripts\\Entities\\Mahhor\\Mahhor Skills\\Stalagmit.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Entities\\Mahhor\\Mahhor Skills\\Stalagmit.cs",
-              "ToolTip": "C:\\Users\\Filipe Antony\\Documents\\Aura_Jogo\\TDS_Kenzen_Tales\\Assets\\Scripts\\Entities\\Mahhor\\Mahhor Skills\\Stalagmit.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Entities\\Mahhor\\Mahhor Skills\\Stalagmit.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAwwDkAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T03:56:36.929Z"
             },
             {
               "$type": "Document",
