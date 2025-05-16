@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8286881579393325814}
   - component: {fileID: 8376193521812762627}
   - component: {fileID: 8768627907979372917}
+  - component: {fileID: 4566472331046746831}
   - component: {fileID: 4408343186632908311}
   - component: {fileID: 8214489409440278786}
   - component: {fileID: 4499986771363205354}
@@ -20,7 +21,8 @@ GameObject:
   - component: {fileID: 133617317494853435}
   - component: {fileID: 7720599259090435442}
   - component: {fileID: 3572247114797194996}
-  - component: {fileID: 4566472331046746831}
+  - component: {fileID: 6112777454648339568}
+  - component: {fileID: 7135206270790007271}
   m_Layer: 3
   m_Name: Mahhor
   m_TagString: Untagged
@@ -188,6 +190,41 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.3, y: 0.5}
   m_EdgeRadius: 0
+--- !u!70 &4566472331046746831
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7481735788027894725}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.4}
+  m_Size: {x: 0.25, y: 0.2}
+  m_Direction: 1
 --- !u!114 &4408343186632908311
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -322,41 +359,32 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   stonePillarPrefab: {fileID: 7806012540114878243, guid: c21c4e6419842464abffbd4411c3e31a, type: 3}
-  SkillController: {fileID: 133617317494853435}
+  skillController: {fileID: 0}
   stonePillarRange: 8
   stonePillarAmount: 25
---- !u!70 &4566472331046746831
-CapsuleCollider2D:
+--- !u!114 &6112777454648339568
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7481735788027894725}
   m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.4}
-  m_Size: {x: 0.25, y: 0.2}
-  m_Direction: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d8c85bc6f69ea549a0cb9b8e54ae737, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  status: {fileID: 8214489409440278786}
+--- !u!114 &7135206270790007271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7481735788027894725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36450e96fdac3544eaaf63e968bdbeb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  status: {fileID: 8214489409440278786}

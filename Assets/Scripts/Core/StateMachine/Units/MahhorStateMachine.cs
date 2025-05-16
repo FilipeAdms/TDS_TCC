@@ -11,6 +11,7 @@ public class MahhorStateMachine : MonoBehaviour
     public Transform Transforms { get; private set; } // O Transform da unidade
     public MahhorController MahhorController { get; private set; } // O controlador do Mahhor
     public MahhorSkillController MahhorSkillController { get; private set; } // O controlador da skill do Mahhor
+    public FindPlayerOnAttack FindPlayerOnAttack { get; private set; } // O controlador de ataque do Mahhor
 
     private Animator animator; // O Animator da unidade
 
@@ -30,6 +31,8 @@ public class MahhorStateMachine : MonoBehaviour
         MahhorController = GetComponent<MahhorController>();
 
         MahhorSkillController = GetComponent<MahhorSkillController>();
+
+        FindPlayerOnAttack = GetComponent<FindPlayerOnAttack>();
     }
 
     private void Start()

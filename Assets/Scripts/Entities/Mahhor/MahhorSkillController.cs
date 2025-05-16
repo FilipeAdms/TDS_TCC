@@ -12,6 +12,7 @@ public class MahhorSkillController : MonoBehaviour
     #region Flags
     public bool canAct = true;
     private bool isStalagmitActive = false;
+    private bool isStonePillarActive = false;
     #endregion
 
     #region CoolDown's
@@ -39,15 +40,16 @@ public class MahhorSkillController : MonoBehaviour
                 Debug.Log("Escolhendo MahhorMoveState");
                 unit.ChangeState<MahhorMoveState>();
             }
-            else if (skillIndex > 11 && skillIndex <= 25 && !isStalagmitActive)
+            else if (skillIndex > 10 && skillIndex <= 25 && !isStalagmitActive)
             {
                 Debug.Log("Escolhendo stalagmit");
                 isStalagmitActive = true;
                 stalagmit.RangeDetection();
             }
-            else if (skillIndex > 25 && skillIndex <= 45)
+            else if (skillIndex > 25 && skillIndex <= 45 && !isStonePillarActive)
             {
                 Debug.Log("Escolhendo stonePillar");
+                isStonePillarActive = true;
                 stonePillar.RangeDetection();
             }
             else if(skillIndex > 45)
@@ -55,13 +57,24 @@ public class MahhorSkillController : MonoBehaviour
                 Debug.Log("Escolhendo MahhorAttackState");
                 unit.ChangeState<MahhorAttackState>();
             }
+            else
+            {
+                unit.ChangeState<MahhorMoveState>();
+            }
         }
     }
 
-    private IEnumerator StalagmitCooldown()
+    public IEnumerator StalagmitCooldown()
     {
         yield return new WaitForSeconds(stalagmitCooldown);
+        Debug.Log("Stalagmit Cooldown finalizado");
         isStalagmitActive = false;
+    }
+    public IEnumerator StonePillarCooldown()
+    {
+        yield return new WaitForSeconds(stalagmitCooldown);
+        Debug.Log("Stalagmit Cooldown finalizado");
+        isStonePillarActive = false;
     }
 
 }

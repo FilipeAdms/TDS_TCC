@@ -30,11 +30,17 @@ public class MahhorMoveState : MahhorState
     public override void Exit()
     {
         unit.Rigidbody2d.velocity = Vector2.zero;
-        unit.MahhorSkillController.canAct = true;
+        unit.StartCoroutine(CanActCooldown());
     }
 
     private void MoveTo(Vector2 targetPosition)
     {
         unit.Transforms.position = Vector2.MoveTowards(unit.Transforms.position, targetPosition, unit.Status.currentMoveSpeed * Time.deltaTime * 10f);
+    }
+
+    private IEnumerator CanActCooldown()
+    {
+        yield return new WaitForSeconds(1f);
+        unit.MahhorSkillController.canAct = true;
     }
 }

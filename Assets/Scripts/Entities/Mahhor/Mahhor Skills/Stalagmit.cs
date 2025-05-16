@@ -24,7 +24,7 @@ public class Stalagmit : MonoBehaviour
             {
                 StartCoroutine(SpawnCooldown(collider));
                 Debug.Log("Stalagmite Cooldown iniciado");
-                skillController.StartCoroutine("StalagmitCooldown");
+                skillController.StartCoroutine(skillController.StalagmitCooldown());
             }
         }
     }
@@ -40,6 +40,7 @@ public class Stalagmit : MonoBehaviour
             yield return new WaitForSeconds(0.25f);
         }
         skillController.canAct = true;
+        skillController.ChooseSkill();
     }
 
 }

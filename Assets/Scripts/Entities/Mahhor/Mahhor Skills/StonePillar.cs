@@ -7,7 +7,7 @@ public class StonePillar : MonoBehaviour
     [SerializeField] private Transform playerPosition;
     [SerializeField] private LayerMask playerMask;
     [SerializeField] private GameObject stonePillarPrefab;
-    [SerializeField] private MahhorSkillController SkillController;
+    [SerializeField] private MahhorSkillController skillController;
     public float stonePillarRange;
     public float stonePillarAmount;
     private Collider2D[] playerDetection;
@@ -26,7 +26,9 @@ public class StonePillar : MonoBehaviour
                 Debug.Log("Jogador Detectado, iniciando Corrotina");
                 Vector3 playerCurrentPosition = collider.transform.position;
                 StartCoroutine(SpawnCooldown(collider, playerCurrentPosition));
-                StartCoroutine(Cooldown());
+
+                Debug.Log("Stalagmite Cooldown iniciado");
+                skillController.StartCoroutine(skillController.StonePillarCooldown());
             }
         }
     }
@@ -40,13 +42,8 @@ public class StonePillar : MonoBehaviour
             Vector3 spawnPosition = this.transform.position + direction * 0.5f * i;
             Instantiate(stonePillarPrefab, spawnPosition, Quaternion.identity);
             yield return new WaitForSeconds(0.05f);
-
         }
-    }
-    private IEnumerator Cooldown()
-    {
-        yield return new WaitForSeconds(5f);
-        SkillController.canAct = true;
-        SkillController.ChooseSkill();
+        skillController.canAct = true;
+        skillController.ChooseSkill();
     }
 }
