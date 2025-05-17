@@ -1,0 +1,316 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\LabInfo\\Documents\\TDS_TCC\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5D3A398C-16C5-F4CA-EE96-1500BF36393F}|Assembly-CSharp.csproj|c:\\users\\labinfo\\documents\\tds_tcc\\assets\\scripts\\entities\\player\\playerskillcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D3A398C-16C5-F4CA-EE96-1500BF36393F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\entities\\player\\playerskillcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D3A398C-16C5-F4CA-EE96-1500BF36393F}|Assembly-CSharp.csproj|c:\\users\\labinfo\\documents\\tds_tcc\\assets\\scripts\\entities\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D3A398C-16C5-F4CA-EE96-1500BF36393F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\entities\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D3A398C-16C5-F4CA-EE96-1500BF36393F}|Assembly-CSharp.csproj|c:\\users\\labinfo\\documents\\tds_tcc\\assets\\scripts\\core\\statemachine\\states\\dashstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D3A398C-16C5-F4CA-EE96-1500BF36393F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\statemachine\\states\\dashstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D3A398C-16C5-F4CA-EE96-1500BF36393F}|Assembly-CSharp.csproj|C:\\Users\\LabInfo\\Documents\\TDS_TCC\\assets\\scripts\\core\\statemachine\\states\\attackstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D3A398C-16C5-F4CA-EE96-1500BF36393F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\statemachine\\states\\attackstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D3A398C-16C5-F4CA-EE96-1500BF36393F}|Assembly-CSharp.csproj|c:\\users\\labinfo\\documents\\tds_tcc\\assets\\scripts\\core\\statemachine\\states\\movestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D3A398C-16C5-F4CA-EE96-1500BF36393F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\statemachine\\states\\movestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D3A398C-16C5-F4CA-EE96-1500BF36393F}|Assembly-CSharp.csproj|c:\\users\\labinfo\\documents\\tds_tcc\\assets\\scripts\\entities\\mahhor\\mahhorsetstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D3A398C-16C5-F4CA-EE96-1500BF36393F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\entities\\mahhor\\mahhorsetstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D3A398C-16C5-F4CA-EE96-1500BF36393F}|Assembly-CSharp.csproj|C:\\Users\\LabInfo\\Documents\\TDS_TCC\\assets\\scripts\\entities\\mahhor\\mahhorskillcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D3A398C-16C5-F4CA-EE96-1500BF36393F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\entities\\mahhor\\mahhorskillcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D3A398C-16C5-F4CA-EE96-1500BF36393F}|Assembly-CSharp.csproj|C:\\Users\\LabInfo\\Documents\\TDS_TCC\\assets\\scripts\\stats\\statuscomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D3A398C-16C5-F4CA-EE96-1500BF36393F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\stats\\statuscomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D3A398C-16C5-F4CA-EE96-1500BF36393F}|Assembly-CSharp.csproj|C:\\Users\\LabInfo\\Documents\\TDS_TCC\\assets\\scripts\\core\\statemachine\\states\\mahhorattackstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D3A398C-16C5-F4CA-EE96-1500BF36393F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\statemachine\\states\\mahhorattackstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D3A398C-16C5-F4CA-EE96-1500BF36393F}|Assembly-CSharp.csproj|C:\\Users\\LabInfo\\Documents\\TDS_TCC\\assets\\scripts\\entities\\mahhor\\mahhor skills\\stalagmit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D3A398C-16C5-F4CA-EE96-1500BF36393F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\entities\\mahhor\\mahhor skills\\stalagmit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D3A398C-16C5-F4CA-EE96-1500BF36393F}|Assembly-CSharp.csproj|C:\\Users\\LabInfo\\Documents\\TDS_TCC\\assets\\scripts\\entities\\mahhor\\mahhor skills\\stonepillar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D3A398C-16C5-F4CA-EE96-1500BF36393F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\entities\\mahhor\\mahhor skills\\stonepillar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D3A398C-16C5-F4CA-EE96-1500BF36393F}|Assembly-CSharp.csproj|C:\\Users\\LabInfo\\Documents\\TDS_TCC\\assets\\scripts\\core\\statemachine\\states\\mahhormovestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D3A398C-16C5-F4CA-EE96-1500BF36393F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\statemachine\\states\\mahhormovestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D3A398C-16C5-F4CA-EE96-1500BF36393F}|Assembly-CSharp.csproj|C:\\Users\\LabInfo\\Documents\\TDS_TCC\\assets\\scripts\\core\\statemachine\\units\\playerstatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D3A398C-16C5-F4CA-EE96-1500BF36393F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\statemachine\\units\\playerstatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D3A398C-16C5-F4CA-EE96-1500BF36393F}|Assembly-CSharp.csproj|C:\\Users\\LabInfo\\Documents\\TDS_TCC\\assets\\scripts\\core\\statemachine\\units\\mahhorstatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D3A398C-16C5-F4CA-EE96-1500BF36393F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\statemachine\\units\\mahhorstatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D3A398C-16C5-F4CA-EE96-1500BF36393F}|Assembly-CSharp.csproj|C:\\Users\\LabInfo\\Documents\\TDS_TCC\\assets\\scripts\\core\\statemachine\\states\\deathstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D3A398C-16C5-F4CA-EE96-1500BF36393F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\statemachine\\states\\deathstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D3A398C-16C5-F4CA-EE96-1500BF36393F}|Assembly-CSharp.csproj|C:\\Users\\LabInfo\\Documents\\TDS_TCC\\assets\\scripts\\entities\\mahhor\\mahhor skills\\stonepillardamage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D3A398C-16C5-F4CA-EE96-1500BF36393F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\entities\\mahhor\\mahhor skills\\stonepillardamage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D3A398C-16C5-F4CA-EE96-1500BF36393F}|Assembly-CSharp.csproj|C:\\Users\\LabInfo\\Documents\\TDS_TCC\\assets\\scripts\\core\\statemachine\\states\\mahhoridlestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D3A398C-16C5-F4CA-EE96-1500BF36393F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\statemachine\\states\\mahhoridlestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D3A398C-16C5-F4CA-EE96-1500BF36393F}|Assembly-CSharp.csproj|C:\\Users\\LabInfo\\Documents\\TDS_TCC\\assets\\scripts\\entities\\mahhor\\mahhorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D3A398C-16C5-F4CA-EE96-1500BF36393F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\entities\\mahhor\\mahhorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PlayerSkillController.cs",
+              "DocumentMoniker": "C:\\Users\\LabInfo\\Documents\\TDS_TCC\\Assets\\Scripts\\Entities\\Player\\PlayerSkillController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Entities\\Player\\PlayerSkillController.cs",
+              "ToolTip": "C:\\Users\\LabInfo\\Documents\\TDS_TCC\\Assets\\Scripts\\Entities\\Player\\PlayerSkillController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Entities\\Player\\PlayerSkillController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T00:40:14.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DashState.cs",
+              "DocumentMoniker": "C:\\Users\\LabInfo\\Documents\\TDS_TCC\\Assets\\Scripts\\Core\\StateMachine\\States\\DashState.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\StateMachine\\States\\DashState.cs",
+              "ToolTip": "C:\\Users\\LabInfo\\Documents\\TDS_TCC\\Assets\\Scripts\\Core\\StateMachine\\States\\DashState.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Core\\StateMachine\\States\\DashState.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T00:39:51.569Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MoveState.cs",
+              "DocumentMoniker": "C:\\Users\\LabInfo\\Documents\\TDS_TCC\\Assets\\Scripts\\Core\\StateMachine\\States\\MoveState.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\StateMachine\\States\\MoveState.cs",
+              "ToolTip": "C:\\Users\\LabInfo\\Documents\\TDS_TCC\\Assets\\Scripts\\Core\\StateMachine\\States\\MoveState.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Core\\StateMachine\\States\\MoveState.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T00:38:33.221Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PlayerController.cs",
+              "DocumentMoniker": "C:\\Users\\LabInfo\\Documents\\TDS_TCC\\Assets\\Scripts\\Entities\\Player\\PlayerController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Entities\\Player\\PlayerController.cs",
+              "ToolTip": "C:\\Users\\LabInfo\\Documents\\TDS_TCC\\Assets\\Scripts\\Entities\\Player\\PlayerController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Entities\\Player\\PlayerController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAvwBoAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T00:38:13.37Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MahhorSetStatus.cs",
+              "DocumentMoniker": "C:\\Users\\LabInfo\\Documents\\TDS_TCC\\Assets\\Scripts\\Entities\\Mahhor\\MahhorSetStatus.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Entities\\Mahhor\\MahhorSetStatus.cs",
+              "ToolTip": "C:\\Users\\LabInfo\\Documents\\TDS_TCC\\Assets\\Scripts\\Entities\\Mahhor\\MahhorSetStatus.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Entities\\Mahhor\\MahhorSetStatus.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAQwFYAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T00:14:32.375Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MahhorSkillController.cs",
+              "DocumentMoniker": "C:\\Users\\LabInfo\\Documents\\TDS_TCC\\Assets\\Scripts\\Entities\\Mahhor\\MahhorSkillController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Entities\\Mahhor\\MahhorSkillController.cs",
+              "ToolTip": "C:\\Users\\LabInfo\\Documents\\TDS_TCC\\Assets\\Scripts\\Entities\\Mahhor\\MahhorSkillController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Entities\\Mahhor\\MahhorSkillController.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAwA0AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T23:08:17.021Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Stalagmit.cs",
+              "DocumentMoniker": "C:\\Users\\LabInfo\\Documents\\TDS_TCC\\Assets\\Scripts\\Entities\\Mahhor\\Mahhor Skills\\Stalagmit.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Entities\\Mahhor\\Mahhor Skills\\Stalagmit.cs",
+              "ToolTip": "C:\\Users\\LabInfo\\Documents\\TDS_TCC\\Assets\\Scripts\\Entities\\Mahhor\\Mahhor Skills\\Stalagmit.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Entities\\Mahhor\\Mahhor Skills\\Stalagmit.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAADwvx8AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T00:07:27.209Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AttackState.cs",
+              "DocumentMoniker": "C:\\Users\\LabInfo\\Documents\\TDS_TCC\\Assets\\Scripts\\Core\\StateMachine\\States\\AttackState.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\StateMachine\\States\\AttackState.cs",
+              "ToolTip": "C:\\Users\\LabInfo\\Documents\\TDS_TCC\\Assets\\Scripts\\Core\\StateMachine\\States\\AttackState.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Core\\StateMachine\\States\\AttackState.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T00:06:51.462Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MahhorAttackState.cs",
+              "DocumentMoniker": "C:\\Users\\LabInfo\\Documents\\TDS_TCC\\Assets\\Scripts\\Core\\StateMachine\\States\\MahhorAttackState.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\StateMachine\\States\\MahhorAttackState.cs",
+              "ToolTip": "C:\\Users\\LabInfo\\Documents\\TDS_TCC\\Assets\\Scripts\\Core\\StateMachine\\States\\MahhorAttackState.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Core\\StateMachine\\States\\MahhorAttackState.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAzwCkAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T23:28:41.37Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "StonePillar.cs",
+              "DocumentMoniker": "C:\\Users\\LabInfo\\Documents\\TDS_TCC\\Assets\\Scripts\\Entities\\Mahhor\\Mahhor Skills\\StonePillar.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Entities\\Mahhor\\Mahhor Skills\\StonePillar.cs",
+              "ToolTip": "C:\\Users\\LabInfo\\Documents\\TDS_TCC\\Assets\\Scripts\\Entities\\Mahhor\\Mahhor Skills\\StonePillar.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Entities\\Mahhor\\Mahhor Skills\\StonePillar.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAADwvyEAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T23:07:08.314Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "StatusComponent.cs",
+              "DocumentMoniker": "C:\\Users\\LabInfo\\Documents\\TDS_TCC\\Assets\\Scripts\\Stats\\StatusComponent.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Stats\\StatusComponent.cs",
+              "ToolTip": "C:\\Users\\LabInfo\\Documents\\TDS_TCC\\Assets\\Scripts\\Stats\\StatusComponent.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Stats\\StatusComponent.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAiwBMAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T00:08:57.027Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PlayerStateMachine.cs",
+              "DocumentMoniker": "C:\\Users\\LabInfo\\Documents\\TDS_TCC\\Assets\\Scripts\\Core\\StateMachine\\Units\\PlayerStateMachine.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\StateMachine\\Units\\PlayerStateMachine.cs",
+              "ToolTip": "C:\\Users\\LabInfo\\Documents\\TDS_TCC\\Assets\\Scripts\\Core\\StateMachine\\Units\\PlayerStateMachine.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Core\\StateMachine\\Units\\PlayerStateMachine.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAkwFYAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T00:07:18.225Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MahhorMoveState.cs",
+              "DocumentMoniker": "C:\\Users\\LabInfo\\Documents\\TDS_TCC\\Assets\\Scripts\\Core\\StateMachine\\States\\MahhorMoveState.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\StateMachine\\States\\MahhorMoveState.cs",
+              "ToolTip": "C:\\Users\\LabInfo\\Documents\\TDS_TCC\\Assets\\Scripts\\Core\\StateMachine\\States\\MahhorMoveState.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Core\\StateMachine\\States\\MahhorMoveState.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwCQAAACOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T23:11:21.349Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "DeathState.cs",
+              "DocumentMoniker": "C:\\Users\\LabInfo\\Documents\\TDS_TCC\\Assets\\Scripts\\Core\\StateMachine\\States\\DeathState.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\StateMachine\\States\\DeathState.cs",
+              "ToolTip": "C:\\Users\\LabInfo\\Documents\\TDS_TCC\\Assets\\Scripts\\Core\\StateMachine\\States\\DeathState.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Core\\StateMachine\\States\\DeathState.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAowAgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T00:07:02.125Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "StonePillarDamage.cs",
+              "DocumentMoniker": "C:\\Users\\LabInfo\\Documents\\TDS_TCC\\Assets\\Scripts\\Entities\\Mahhor\\Mahhor Skills\\StonePillarDamage.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Entities\\Mahhor\\Mahhor Skills\\StonePillarDamage.cs",
+              "ToolTip": "C:\\Users\\LabInfo\\Documents\\TDS_TCC\\Assets\\Scripts\\Entities\\Mahhor\\Mahhor Skills\\StonePillarDamage.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Entities\\Mahhor\\Mahhor Skills\\StonePillarDamage.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwCAAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T00:05:18.395Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MahhorStateMachine.cs",
+              "DocumentMoniker": "C:\\Users\\LabInfo\\Documents\\TDS_TCC\\Assets\\Scripts\\Core\\StateMachine\\Units\\MahhorStateMachine.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\StateMachine\\Units\\MahhorStateMachine.cs",
+              "ToolTip": "C:\\Users\\LabInfo\\Documents\\TDS_TCC\\Assets\\Scripts\\Core\\StateMachine\\Units\\MahhorStateMachine.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Core\\StateMachine\\Units\\MahhorStateMachine.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAA/wFQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T23:15:26.597Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "MahhorController.cs",
+              "DocumentMoniker": "C:\\Users\\LabInfo\\Documents\\TDS_TCC\\Assets\\Scripts\\Entities\\Mahhor\\MahhorController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Entities\\Mahhor\\MahhorController.cs",
+              "ToolTip": "C:\\Users\\LabInfo\\Documents\\TDS_TCC\\Assets\\Scripts\\Entities\\Mahhor\\MahhorController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Entities\\Mahhor\\MahhorController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAsAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T23:14:37.68Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "MahhorIdleState.cs",
+              "DocumentMoniker": "C:\\Users\\LabInfo\\Documents\\TDS_TCC\\Assets\\Scripts\\Core\\StateMachine\\States\\MahhorIdleState.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\StateMachine\\States\\MahhorIdleState.cs",
+              "ToolTip": "C:\\Users\\LabInfo\\Documents\\TDS_TCC\\Assets\\Scripts\\Core\\StateMachine\\States\\MahhorIdleState.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Core\\StateMachine\\States\\MahhorIdleState.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T23:15:35.404Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

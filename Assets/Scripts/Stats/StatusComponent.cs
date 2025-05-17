@@ -9,7 +9,7 @@ public class StatusComponent : MonoBehaviour
     [Header("Atributos atuais")]
     public float currentHealth = 100f;
     public float currentAura = 100f;
-    public float currentMoveSpeed = 2.5f;
+    public float currentMoveSpeed = 4f;
     public float currentAttackDamage = 20f;
     public float currentDefense = 20f;
     public float currentAuraRegen = 1.25f;
@@ -19,7 +19,7 @@ public class StatusComponent : MonoBehaviour
     [Header("Atributos Base")]
     public float maxHealth = 100f;
     public float maxAura = 100f;
-    public float baseMoveSpeed = 2.5f;
+    public float baseMoveSpeed = 4f;
     public float baseAttackDamage = 20f;
     public float baseDefense = 20f;
     public float baseHealthRegen = 1.25f;
@@ -29,7 +29,7 @@ public class StatusComponent : MonoBehaviour
     [Header("Atributos Base")]
     public float inicialHealth = 100f;
     public float inicialAura = 100f;
-    public float inicialMoveSpeed = 2.5f;
+    public float inicialMoveSpeed = 4f;
     public float inicialAttackDamage = 20f;
     public float inicialDefense = 20f;
     public float inicialHealthRegen = 1.25f;
@@ -61,7 +61,6 @@ public class StatusComponent : MonoBehaviour
                 currentHealthRegen = currentHealthRegen + value;
                 break;
             default:
-                Debug.LogError("Tipo de atributo inválido: " + type);
                 break;
         }
     }
@@ -93,7 +92,6 @@ public class StatusComponent : MonoBehaviour
                 baseHealthRegen = Mathf.Max(baseHealthRegen + value, 0);
                 break;
             default:
-                Debug.LogError("Tipo de atributo inválido: " + type);
                 break;
         }
     }

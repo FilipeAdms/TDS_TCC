@@ -10,6 +10,7 @@ public class StonePillar : MonoBehaviour
     [SerializeField] private MahhorSkillController skillController;
     public float stonePillarRange;
     public float stonePillarAmount;
+    private Vector3 playerPosOffset;
     private Collider2D[] playerDetection;
 
 
@@ -18,13 +19,21 @@ public class StonePillar : MonoBehaviour
     {
         Debug.Log("Tentando Detectar o jogador");
         playerDetection = Physics2D.OverlapCircleAll(transform.position, stonePillarRange, playerMask);
-
+        if (playerDetection.Length == 0)
+        {
+            Debug.Log("Jogador não detectado");
+            skillController.canAct = true;
+            skillController.isStalagmitActive = false;
+            skillController.ChooseSkill();
+            return;
+        }
         foreach (Collider2D collider in playerDetection)
         {
             if (collider.CompareTag("Player"))
             {
+                playerPosOffset = new Vector3(0, -0.2f, 0);
                 Debug.Log("Jogador Detectado, iniciando Corrotina");
-                Vector3 playerCurrentPosition = collider.transform.position;
+                Vector3 playerCurrentPosition = collider.transform.position + playerPosOffset;
                 StartCoroutine(SpawnCooldown(collider, playerCurrentPosition));
 
                 Debug.Log("Stalagmite Cooldown iniciado");

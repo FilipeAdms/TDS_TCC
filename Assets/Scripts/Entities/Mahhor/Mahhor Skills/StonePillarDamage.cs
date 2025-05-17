@@ -25,7 +25,7 @@ public class StonePillarDamage : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            collision.gameObject.GetComponent<PlayerBars>().TakeDamage(8);
+            collision.gameObject.GetComponent<PlayerBars>().TakeDamage(10);
         }
     }
     private void StonePillarAnimation()

@@ -63,7 +63,6 @@ public class PlayerStateMachine : MonoBehaviour
     {
         if (newState == null)
         {
-            Debug.LogError("Novo estado não pode ser nulo.");
             return;
         }
         CurrentState?.Exit(); // Executa o Exit do estado atual
@@ -86,10 +85,6 @@ public class PlayerStateMachine : MonoBehaviour
         // ou var retorna o estado do dicionário
         {
             SetState(newState); // Troca para o novo estado
-        }
-        else
-        {
-            Debug.LogError($"Estado {typeof(StateName).Name} não está registrado na máquina de estados.");
         }
     }
 }

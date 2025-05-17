@@ -32,7 +32,8 @@ public class MahhorSetStatus : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        setMultipliers("hard"); // apenas para teste inicial
+        setMultipliers("medium"); // apenas para teste inicial
+        SetStatus();
     }
 
     public void SetStatus()
@@ -64,7 +65,7 @@ public class MahhorSetStatus : MonoBehaviour
             case "easy":
                 currentHealthMultiplier = 0.75f;
                 currentAuraMultiplier = 0.75f;
-                currentMoveSpeedMultiplier = 0.75f;
+                currentMoveSpeedMultiplier = 2f;
                 currentAttackDamageMultiplier = 0.75f;
                 currentDefenseMultiplier = 0.5f;
                 currentAuraRegenMultiplier = 0.5f;
@@ -72,7 +73,7 @@ public class MahhorSetStatus : MonoBehaviour
 
                 maxHealthMultiplier = 0.75f;
                 maxAuraMultiplier = 0.75f;
-                baseMoveSpeedMultiplier = 0.75f;
+                baseMoveSpeedMultiplier = 2f;
                 baseAttackDamageMultiplier = 0.75f;
                 baseDefenseMultiplier = 0.5f;
                 baseHealthRegenMultiplier = 0.5f;
@@ -81,7 +82,7 @@ public class MahhorSetStatus : MonoBehaviour
             case "medium":
                 currentHealthMultiplier = 1f;
                 currentAuraMultiplier = 1f;
-                currentMoveSpeedMultiplier = 1f;
+                currentMoveSpeedMultiplier = 4f;
                 currentAttackDamageMultiplier = 1f;
                 currentDefenseMultiplier = 1f;
                 currentAuraRegenMultiplier = 1f;
@@ -89,7 +90,7 @@ public class MahhorSetStatus : MonoBehaviour
 
                 maxHealthMultiplier = 1f;
                 maxAuraMultiplier = 1f;
-                baseMoveSpeedMultiplier = 1f;
+                baseMoveSpeedMultiplier = 4f;
                 baseAttackDamageMultiplier = 1f;
                 baseDefenseMultiplier = 1f;
                 baseHealthRegenMultiplier = 1f;
@@ -98,7 +99,7 @@ public class MahhorSetStatus : MonoBehaviour
             case "hard":
                 currentHealthMultiplier = 4f;
                 currentAuraMultiplier = 4f;
-                currentMoveSpeedMultiplier = 1.5f;
+                currentMoveSpeedMultiplier = 6f;
                 currentAttackDamageMultiplier = 2.5f;
                 currentDefenseMultiplier = 2f;
                 currentAuraRegenMultiplier = 2f;
@@ -106,7 +107,7 @@ public class MahhorSetStatus : MonoBehaviour
 
                 maxHealthMultiplier = 4f;
                 maxAuraMultiplier = 4f;
-                baseMoveSpeedMultiplier = 1.5f;
+                baseMoveSpeedMultiplier = 6f;
                 baseAttackDamageMultiplier = 2.5f;
                 baseDefenseMultiplier = 2f;
                 baseHealthRegenMultiplier = 2f;

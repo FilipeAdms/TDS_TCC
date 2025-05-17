@@ -48,7 +48,6 @@ public class AttackState : State
     public override void Tick() { }
 
     public override void Exit() { 
-        Debug.Log("Saindo do estado de ataque");
         unit.PlayerController.canAttack = true; }
 
     private IEnumerator WaitForAnimation(float duration)

@@ -8,7 +8,7 @@ public class PlayerSkillController : MonoBehaviour
     public bool canDash = true;
     private PlayerStateMachine unit;
 
-    private float cooldownDash = 1.25f;
+    private float cooldownDash = 0.3f;
 
     private void Start()
     {
@@ -17,7 +17,8 @@ public class PlayerSkillController : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.K) &&
+        if ((Input.GetKeyDown(KeyCode.K) ||
+            Input.GetKeyDown(KeyCode.X)) &&
             (Input.GetAxisRaw("Horizontal") != 0 ||
             Input.GetAxisRaw("Vertical") != 0) &&
             canDash)

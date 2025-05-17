@@ -19,7 +19,6 @@ public class MahhorMoveState : MahhorState
         
         if (unit.Transforms.position == unit.MahhorController.patrolPoints[patrolIndex].transform.position)
         {
-
             unit.ChangeState<MahhorIdleState>();
         } else
         {
@@ -35,7 +34,7 @@ public class MahhorMoveState : MahhorState
 
     private void MoveTo(Vector2 targetPosition)
     {
-        unit.Transforms.position = Vector2.MoveTowards(unit.Transforms.position, targetPosition, unit.Status.currentMoveSpeed * Time.deltaTime * 10f);
+        unit.Transforms.position = Vector2.MoveTowards(unit.Transforms.position, targetPosition, unit.Status.currentMoveSpeed * Time.deltaTime);
     }
 
     private IEnumerator CanActCooldown()

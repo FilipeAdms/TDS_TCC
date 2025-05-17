@@ -18,6 +18,14 @@ public class Stalagmit : MonoBehaviour
     {
         playerDetection = Physics2D.OverlapCircleAll(transform.position, stalagmitRange, playerMask);
 
+        if(playerDetection.Length == 0)
+        {
+            Debug.Log("Jogador não detectado");
+            skillController.canAct = true;
+            skillController.isStalagmitActive = false;
+            skillController.ChooseSkill();
+            return;
+        }
         foreach (Collider2D collider in playerDetection)
         {
             if (collider.CompareTag("Player"))
