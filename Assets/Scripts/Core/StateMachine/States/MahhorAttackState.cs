@@ -14,11 +14,13 @@ public class MahhorAttackState : MahhorState
     private float animationLength; // Duração da animação
     private bool isWalking; // Flag para saber se ele está andando
     private int activationAmount = 0; // Contador de ativações
+    private int animationCount = 0; // Contador de animações
     string animName =""; // Nome da animação a ser tocada
 
     public override void Enter()
     {
         activationAmount = 0; // Reseta o contador de ativações
+        animationCount = 0; // Reseta o contador de animações
         isWalking = true; // Ativa a flag de movimento, pois ele vai se mover para o jogador
         player = GameObject.FindGameObjectWithTag("Player"); // Procura pelo jogador
         FindPlayerToWalk(); // Encontra o jogador para saber onde ativar a direção da animação de ataque
@@ -100,6 +102,25 @@ public class MahhorAttackState : MahhorState
 
     private void MoveTo(Vector2 targetPosition) // Move Mahhor para a posição indicada
     {
+        if (animationCount == 0)
+        {
+            animationCount++; // Incrementa o contador de animações
+            switch (animName)
+            {
+                case "MahhorBasicAttackRight":
+                    unit.GetAnimator().Play("MahhorWalkingRight", 0);
+                    break;
+                case "MahhorBasicAttackLeft":
+                    unit.GetAnimator().Play("MahhorWalkingLeft", 0);
+                    break;
+                case "MahhorBasicAttackUp":
+                    unit.GetAnimator().Play("MahhorWalkingUp", 0);
+                    break;
+                case "MahhorBasicAttackDown":
+                    unit.GetAnimator().Play("MahhorWalkingDown", 0);
+                    break;
+            }
+        }
         unit.Transforms.position = Vector2.MoveTowards(unit.Transforms.position, targetPosition, unit.Status.currentMoveSpeed * Time.deltaTime);
     }
     private IEnumerator WaitForAnimation(float duration) // Espera o Tempo de animação acabar
