@@ -26,6 +26,29 @@ public class MahhorSkillController : MonoBehaviour
 
     public void ChooseSkill()
     {
+        StartCoroutine(ChoosingSkill());
+    }
+
+    public IEnumerator StalagmitCooldown()
+    {
+        yield return new WaitForSeconds(stalagmitCooldown);
+        isStalagmitActive = false;
+    }
+    public IEnumerator StonePillarCooldown()
+    {
+        yield return new WaitForSeconds(stonePillarCooldown);
+        isStonePillarActive = false;
+    }
+
+    private IEnumerator WaitForCanAct()
+    {
+        yield return new WaitUntil(() => canAct == true);
+        ChooseSkill();
+    }
+
+    private IEnumerator ChoosingSkill()
+    {
+        yield return new WaitForSeconds(1f);
         Debug.Log("Escolhendo habilidade");
         if (canAct)
         {
@@ -51,7 +74,7 @@ public class MahhorSkillController : MonoBehaviour
                 isStonePillarActive = true;
                 stonePillar.RangeDetection();
             }
-            else if(skillIndex > 45)
+            else if (skillIndex > 45)
             {
                 Debug.Log("MahhorAttackState");
                 unit.ChangeState<MahhorAttackState>();
@@ -67,22 +90,5 @@ public class MahhorSkillController : MonoBehaviour
             unit.GetAnimator().Play("Idle");
             StartCoroutine(WaitForCanAct());
         }
-    }
-
-    public IEnumerator StalagmitCooldown()
-    {
-        yield return new WaitForSeconds(stalagmitCooldown);
-        isStalagmitActive = false;
-    }
-    public IEnumerator StonePillarCooldown()
-    {
-        yield return new WaitForSeconds(stonePillarCooldown);
-        isStonePillarActive = false;
-    }
-
-    private IEnumerator WaitForCanAct()
-    {
-        yield return new WaitUntil(() => canAct == true);
-        ChooseSkill();
     }
 }

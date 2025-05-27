@@ -8,8 +8,18 @@ public class IdleState : State
     public override void Enter()
     {
         // Ativa a animação de Idle
-        unit.GetAnimator().Play("Idle");
-
+        if (unit.PlayerController.currentElement == ElementType.Default)
+        {
+            unit.GetAnimator().Play("Idle");
+        }
+        else if (unit.PlayerController.currentElement == ElementType.Earth)
+        {
+            unit.GetAnimator().Play("IdleEarth");
+        }
+        else if (unit.PlayerController.currentElement == ElementType.Air)
+        {
+            unit.GetAnimator().Play("KenzenIdleAir");
+        }
     }
 
     public override void Exit()

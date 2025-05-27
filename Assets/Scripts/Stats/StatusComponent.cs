@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.Rendering.DebugUI;
 
 // StatusComponent é um componente que gerencia os atributos de uma unidade
 public class StatusComponent : MonoBehaviour
@@ -90,6 +91,66 @@ public class StatusComponent : MonoBehaviour
                 break;
             case AttributeType.baseHealthRegen:
                 baseHealthRegen = Mathf.Max(baseHealthRegen + value, 0);
+                break;
+            default:
+                break;
+        }
+    }
+
+    public void ResetCurrentValue(AttributeType type)
+    {
+        switch (type)
+        {
+            case AttributeType.currentHealth:
+                currentHealth = inicialHealth;
+                break;
+            case AttributeType.currentAura:
+                currentAura = inicialAura;
+                break;
+            case AttributeType.currentMoveSpeed:
+                currentMoveSpeed = inicialMoveSpeed;
+                break;
+            case AttributeType.currentAttackDamage:
+                currentAttackDamage = inicialAttackDamage;
+                break;
+            case AttributeType.currentDefense:
+                currentDefense = inicialDefense;
+                break;
+            case AttributeType.currentAuraRegen:
+                currentAuraRegen = inicialHealthRegen;
+                break;
+            case AttributeType.currentHealthRegen:
+                currentHealthRegen = inicialAuraRegen;
+                break;
+            default:
+                break;
+        }
+    }
+
+    public void ResetBaseValue(AttributeType type)
+    {
+        switch (type)
+        {
+            case AttributeType.currentHealth:
+                maxHealth = inicialHealth;
+                break;
+            case AttributeType.currentAura:
+                maxAura = inicialAura;
+                break;
+            case AttributeType.currentMoveSpeed:
+               baseMoveSpeed = inicialMoveSpeed;
+                break;
+            case AttributeType.currentAttackDamage:
+               baseAttackDamage = inicialAttackDamage;
+                break;
+            case AttributeType.currentDefense:
+               baseDefense = inicialDefense;
+                break;
+            case AttributeType.currentAuraRegen:
+               baseAuraRegen = inicialHealthRegen;
+                break;
+            case AttributeType.currentHealthRegen:
+               baseHealthRegen = inicialAuraRegen;
                 break;
             default:
                 break;

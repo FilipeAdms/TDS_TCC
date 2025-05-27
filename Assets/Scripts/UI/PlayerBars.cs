@@ -7,13 +7,11 @@ using TMPro;
 public class PlayerBars : MonoBehaviour
 {
     public Slider slider;
-    public TextMeshProUGUI healthText;
     [SerializeField] private StatusComponent status;
 
     public void SetHealth(float currentHealth)
     {
         slider.value = currentHealth;
-        healthText.text = $"{currentHealth} / {slider.maxValue}";
     }
 
     public void SetMaxHealth(float maxHealth)

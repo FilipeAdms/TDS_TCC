@@ -45,7 +45,8 @@ public class PlayerStateMachine : MonoBehaviour
             { typeof(MoveState), new MoveState(this) },
             { typeof(AttackState), new AttackState(this) },
             { typeof(DashState), new DashState(this) },
-            { typeof(DeathState), new DeathState(this) }
+            { typeof(DeathState), new DeathState(this) },
+            { typeof(AirTransformationState), new AirTransformationState(this) }
         };
 
         // Define o estado inicial como IdleState

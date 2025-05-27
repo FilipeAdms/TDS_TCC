@@ -6,13 +6,29 @@ public class DashState : State
 {
     public DashState(PlayerStateMachine unit) : base(unit){ }
 
-    private float dashingSpeed = 3f;
-    private float dashDuration = 0.25f;
+    private float dashingSpeed;
+    private float dashDuration;
     private Vector2 dashDirection;
     private bool isDashing;
 
     public override void Enter() 
     {
+        if (unit.PlayerController.currentElement == ElementType.Default)
+        {
+            dashingSpeed = 3f; // Velocidade de dash padrão
+            dashDuration = 0.25f; // Duração do dash padrão
+        }
+        else if (unit.PlayerController.currentElement == ElementType.Earth)
+        {
+            dashingSpeed = 2f; // Velocidade de dash padrão
+            dashDuration = 0.3f; // Duração do dash padrão
+        }
+        else if (unit.PlayerController.currentElement == ElementType.Air)
+        {
+            dashingSpeed = 4.5f; // Velocidade de dash padrão
+            dashDuration = 0.1f; // Duração do dash padrão
+        }
+
         isDashing = true;
         dashDirection = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
 
@@ -33,6 +49,7 @@ public class DashState : State
     private IEnumerator StopDashing()
     {
         yield return new WaitForSeconds(dashDuration);
+        unit.PlayerSkillController.canAct = true;
         isDashing = false;
         unit.Rigidbody2d.velocity = Vector2.zero;
         unit.ChangeState<IdleState>();

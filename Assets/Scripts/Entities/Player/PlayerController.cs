@@ -8,10 +8,12 @@ public class PlayerController : MonoBehaviour
     private PlayerStateMachine unit;
     private StatusComponent status;
     public bool canAttack = true;
+    public ElementType currentElement; // Elemento atual do jogador
     [SerializeField] private PlayerBars playerBars;
 
     private void Start()
     {
+        currentElement = ElementType.Default; // Define o elemento inicial do jogador
         status = GetComponent<StatusComponent>();
         unit = GetComponent<PlayerStateMachine>();
 
@@ -21,7 +23,10 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if((Input.GetKeyDown(KeyCode.J) || Input.GetKeyDown(KeyCode.Z)) && canAttack )
+        // Ataque
+        if((Input.GetKeyDown(KeyCode.J) || Input.GetKeyDown(KeyCode.Z)) &&
+            (!Input.GetKey(KeyCode.LeftShift))
+            && canAttack)
         {
             canAttack = false;
             Attack();
@@ -38,4 +43,11 @@ public class PlayerController : MonoBehaviour
         unit.ChangeState<AttackState>();
     }
 
+}
+
+public enum ElementType
+{
+    Earth,
+    Air,
+    Default
 }
