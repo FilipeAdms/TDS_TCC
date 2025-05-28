@@ -8,28 +8,32 @@ public class DashState : State
 
     private float dashingSpeed;
     private float dashDuration;
+    private float blinkDuration = 0.05f;
     private Vector2 dashDirection;
     private bool isDashing;
+    private Color blinkColor = Color.white;
+    private Color originalColor;
 
     public override void Enter() 
     {
+        originalColor = unit.SpriteRenderer.color; // Armazena a cor original do sprite
+        dashDuration = 0.25f; // Duração do dash padrão
+
         if (unit.PlayerController.currentElement == ElementType.Default)
         {
-            dashingSpeed = 3f; // Velocidade de dash padrão
-            dashDuration = 0.25f; // Duração do dash padrão
+            dashingSpeed = 2.5f; // Velocidade de dash padrão
         }
         else if (unit.PlayerController.currentElement == ElementType.Earth)
         {
-            dashingSpeed = 2f; // Velocidade de dash padrão
-            dashDuration = 0.3f; // Duração do dash padrão
+            dashingSpeed = 1.8f; // Velocidade de dash padrão
         }
         else if (unit.PlayerController.currentElement == ElementType.Air)
         {
-            dashingSpeed = 4.5f; // Velocidade de dash padrão
-            dashDuration = 0.1f; // Duração do dash padrão
+            dashingSpeed = 4f; // Velocidade de dash padrão
         }
 
         isDashing = true;
+        unit.StartCoroutine(BlinkColorEffect()); // Inicia o efeito de piscar durante o dash
         dashDirection = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
 
         if (dashDirection == Vector2.zero)
@@ -53,5 +57,16 @@ public class DashState : State
         isDashing = false;
         unit.Rigidbody2d.velocity = Vector2.zero;
         unit.ChangeState<IdleState>();
+    }
+
+    IEnumerator BlinkColorEffect()
+    {
+        do
+        {
+            unit.SpriteRenderer.color = blinkColor;
+            yield return new WaitForSeconds(blinkDuration);
+            unit.SpriteRenderer.color = originalColor;
+            yield return new WaitForSeconds(blinkDuration);
+        } while (isDashing);
     }
 }
