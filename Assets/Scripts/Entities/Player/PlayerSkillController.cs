@@ -10,8 +10,12 @@ public class PlayerSkillController : MonoBehaviour
     public bool canDash = true;
     public bool canTransform = true;
     private PlayerStateMachine unit;
-    private float transformationTimer = 15f; // Temporizador para a transformação
-    private float chargingTimer = 0f; // Temporizador para o carregamento da transformação
+    private TransformationState transformationState = TransformationState.Ready;
+    private float transformationDuration = 15f;
+    private float timer = 0f;
+    private float transformationCooldown = 5f;
+    private float chargingTimer;
+    private float transformationTimer;
     [SerializeField] private Slider transformationSlider; // Slider para a transformação
 
 
@@ -19,8 +23,8 @@ public class PlayerSkillController : MonoBehaviour
 
     private void Start()
     {
-        transformationSlider.maxValue = transformationTimer; // Define o valor máximo do slider
-        transformationSlider.value = transformationTimer; // Define o valor máximo do slider
+        transformationSlider.maxValue = transformationDuration; // Define o valor máximo do slider
+        transformationSlider.value = transformationDuration; // Define o valor máximo do slider
         unit = GetComponent<PlayerStateMachine>();
     }
     private void Update()
@@ -35,13 +39,14 @@ public class PlayerSkillController : MonoBehaviour
             Dash();
         }
         //Transformação
-        if (Input.GetKey(KeyCode.LeftShift) && Input.GetKeyDown(KeyCode.Z) && canTransform && canAct)
+        if (transformationState == TransformationState.Ready &&
+            Input.GetKey(KeyCode.LeftShift) &&
+            Input.GetKeyDown(KeyCode.Z) && canAct)
         {
             Debug.Log("Ar");
             canAct = false;
-            canTransform = false;
-            transformationTimer = 15f;
-            chargingTimer = 0f;
+            transformationState = TransformationState.Transforming;
+            timer = transformationDuration;
 
             if (unit.PlayerController.currentElement != ElementType.Air)
             {
@@ -73,6 +78,7 @@ public class PlayerSkillController : MonoBehaviour
             transformationSlider.value = chargingTimer; // Atualiza o slider com o tempo restante
             if (transformationTimer >= 15f)
             {
+                Debug.Log("Já pode se transformar novamente");
                 canTransform = true;
             }
         }
@@ -93,4 +99,13 @@ public class PlayerSkillController : MonoBehaviour
         unit.PlayerController.currentElement = ElementType.Earth;
         //Ainda não existe
     }
+
+
+}
+
+public enum TransformationState
+{
+    Ready,
+    Transforming,
+    Cooldown
 }
