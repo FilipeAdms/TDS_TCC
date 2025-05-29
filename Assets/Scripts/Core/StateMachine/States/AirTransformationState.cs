@@ -47,7 +47,7 @@ public class AirTransformationState : State
         unit.Status.ModifyCurrentValue(AttributeType.currentMoveSpeed, tempSpeed); // Aumenta a velocidade em 25%
         unit.Status.ModifyCurrentValue(AttributeType.currentAttackDamage, tempDamage); // Aumenta o dano em 25%
     }
-    private IEnumerator WaitForAnimation(float duration)
+    public IEnumerator WaitForAnimation(float duration)
     {
         yield return new WaitForSeconds(duration);
         unit.PlayerSkillController.canAct = true;
