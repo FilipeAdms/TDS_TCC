@@ -14,34 +14,56 @@ public class DashState : State
     private Color blinkColor = Color.white;
     private Color originalColor;
 
-    public override void Enter() 
+    public override void Enter()
     {
-        originalColor = unit.SpriteRenderer.color; // Armazena a cor original do sprite
-        dashDuration = 0.25f; // Duração do dash padrão
+        originalColor = unit.SpriteRenderer.color;
+
+        string hexCode = "#b8e6da"; // Valor padrão
+
+        switch (unit.PlayerController.currentElement)
+        {
+            case ElementType.Default:
+                hexCode = "#3b1e4d"; 
+                break;
+            case ElementType.Earth:
+                hexCode = "#f1c40f";
+                break;
+            case ElementType.Air:
+                hexCode = "#1565c0";
+                break;
+        }
+
+        if (ColorUtility.TryParseHtmlString(hexCode, out Color hexBlinkColor))
+        {
+            blinkColor = hexBlinkColor;
+        }
+
+
+        dashDuration = 0.25f;
 
         if (unit.PlayerController.currentElement == ElementType.Default)
         {
-            dashingSpeed = 2.5f; // Velocidade de dash padrão
+            dashingSpeed = 2.25f;
         }
         else if (unit.PlayerController.currentElement == ElementType.Earth)
         {
-            dashingSpeed = 1.8f; // Velocidade de dash padrão
+            dashingSpeed = 1.75f;
         }
         else if (unit.PlayerController.currentElement == ElementType.Air)
         {
-            dashingSpeed = 4f; // Velocidade de dash padrão
+            dashingSpeed = 3f;
         }
 
         isDashing = true;
-        unit.StartCoroutine(BlinkColorEffect()); // Inicia o efeito de piscar durante o dash
+        unit.StartCoroutine(BlinkColorEffect());
         dashDirection = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
 
         if (dashDirection == Vector2.zero)
         {
-            dashDirection = new Vector2(unit.transform.localScale.x, 0); // Default direction
+            dashDirection = new Vector2(unit.transform.localScale.x, 0);
         }
 
-        if(isDashing)
+        if (isDashing)
         {
             unit.Rigidbody2d.velocity = dashingSpeed * unit.Status.currentMoveSpeed * dashDirection;
         }

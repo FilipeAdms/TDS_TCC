@@ -97,8 +97,8 @@ public class MahhorSetStatus : MonoBehaviour
                 baseAuraRegenMultiplier = 1f;
                 break;
             case "hard":
-                currentHealthMultiplier = 4f;
-                currentAuraMultiplier = 4f;
+                currentHealthMultiplier = 2f;
+                currentAuraMultiplier = 2f;
                 currentMoveSpeedMultiplier = 6f;
                 currentAttackDamageMultiplier = 2.5f;
                 currentDefenseMultiplier = 2f;

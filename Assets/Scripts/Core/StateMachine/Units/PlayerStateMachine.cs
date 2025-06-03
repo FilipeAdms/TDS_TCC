@@ -47,6 +47,7 @@ public class PlayerStateMachine : MonoBehaviour
             { typeof(AttackState), new AttackState(this) },
             { typeof(DashState), new DashState(this) },
             { typeof(DeathState), new DeathState(this) },
+            { typeof(EarthTransformationState), new EarthTransformationState(this) },
             { typeof(AirTransformationState), new AirTransformationState(this) }
         };
 

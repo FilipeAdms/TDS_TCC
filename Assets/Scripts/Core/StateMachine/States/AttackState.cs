@@ -18,16 +18,47 @@ public class AttackState : State
         switch (DirectionUtils.currentDirection)
         {
             case Directions.Right:
-                animName = "KenzenAttackRight";
+                if (unit.PlayerController.currentElement == ElementType.Default)
+                    animName = "KenzenAttackRight";
+                else if (unit.PlayerController.currentElement == ElementType.Air)
+                    animName = "AirKenzenAttackRight";
+                else if (unit.PlayerController.currentElement == ElementType.Earth)
+                {
+                    animName = "EarthKenzenAttackRight";
+                }
                 break;
             case Directions.Left:
                 animName = "KenzenAttackRight";
+                if (unit.PlayerController.currentElement == ElementType.Default)
+                    animName = "KenzenAttackRight";
+                else if (unit.PlayerController.currentElement == ElementType.Air)
+                    animName = "AirKenzenAttackRight";
+                else if (unit.PlayerController.currentElement == ElementType.Earth)
+                {
+                    animName = "EarthKenzenAttackRight";
+                }
                 break;
             case Directions.Up:
                 animName = "KenzenAttackUp";
+                if (unit.PlayerController.currentElement == ElementType.Default)
+                    animName = "KenzenAttackUp";
+                else if (unit.PlayerController.currentElement == ElementType.Air)
+                    animName = "AirKenzenAttackUp";
+                else if (unit.PlayerController.currentElement == ElementType.Earth)
+                {
+                    animName = "EarthKenzenAttackRight";
+                }
                 break;
             case Directions.Down:
                 animName = "KenzenAttackDown";
+                if (unit.PlayerController.currentElement == ElementType.Default)
+                    animName = "KenzenAttackDown";
+                else if (unit.PlayerController.currentElement == ElementType.Air)
+                    animName = "AirKenzenAttackDown";
+                else if (unit.PlayerController.currentElement == ElementType.Earth)
+                {
+                    animName = "EarthKenzenAttackRight";
+                }
                 break;
         }
 

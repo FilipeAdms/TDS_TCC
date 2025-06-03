@@ -34,7 +34,6 @@ public class PlayerController : MonoBehaviour
         if (status.currentHealth < 1)
         {
             SceneManager.LoadScene("Menu");
-
         }
     }
 

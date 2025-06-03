@@ -80,9 +80,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 10
+  m_SortingLayerID: 1221142945
+  m_SortingLayer: 2
+  m_SortingOrder: 0
   m_Sprite: {fileID: 1963858487, guid: f0ce9284e11f2724fb9f40b964d7f209, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -187,8 +187,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7b0a10e08f643943905ca7807ce431d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blinkColor: {r: 1, g: 0, b: 0, a: 1}
   slider: {fileID: 0}
-  healthText: {fileID: 0}
+  spriteRenderer: {fileID: 0}
   status: {fileID: 938868713130238598}
 --- !u!114 &6001459714822484572
 MonoBehaviour:
@@ -215,6 +216,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canAttack: 1
+  currentElement: 0
   playerBars: {fileID: 1292872069109599132}
 --- !u!114 &7473812474247911772
 MonoBehaviour:
@@ -243,7 +245,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50feb1f662294304e9051e9eab891806, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canAct: 1
   canDash: 1
+  canTransform: 1
+  transformationSlider: {fileID: 0}
+  templateChanging: {fileID: 0}
 --- !u!70 &1050705510851812540
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

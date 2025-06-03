@@ -46,11 +46,6 @@ public class PlayerSkillController : MonoBehaviour
         StartCoroutine(StartCooldown(cooldownDash));
         unit.ChangeState<DashState>();
     }
-    private void EarthTransformation()
-    {
-        unit.PlayerController.currentElement = ElementType.Earth;
-        //Ainda não existe
-    }
 
     private void DashInput()
     {
@@ -78,12 +73,19 @@ public class PlayerSkillController : MonoBehaviour
             templateChanging.AirTransformationTemplate();
             unit.ChangeState<AirTransformationState>();
         }
-        else if (Input.GetKey(KeyCode.LeftShift) && Input.GetKeyDown(KeyCode.X) && canTransform && canAct)
+        else if (transformationState == TransformationState.Ready &&
+            Input.GetKey(KeyCode.LeftShift) &&
+            Input.GetKeyDown(KeyCode.X) && canAct && canTransform)
         {
             canAct = false;
             canTransform = false;
+            transformationState = TransformationState.Transforming;
+            transformationTimer = transformationDuration;
+
+            unit.PlayerController.currentElement = ElementType.Earth;
             templateChanging.EarthTransformationTemplate();
-            EarthTransformation();
+            unit.ChangeState<EarthTransformationState>();
+
         }
     }
     private void TransformationTimer()

@@ -51,21 +51,75 @@ public class MoveState : State
         switch (currentDirection)
             {
                 case Directions.Up:
-                    unit.GetAnimator().Play("KenzenRunningTop");
-                break;
+                    if (unit.PlayerController.currentElement == ElementType.Default)
+                    {
+                        unit.GetAnimator().Play("KenzenRunningTop");
+                    }
+                    else if (unit.PlayerController.currentElement == ElementType.Air)
+                    {
+                        unit.GetAnimator().Play("AirKenzenRunningTop");
+                    }else if (unit.PlayerController.currentElement == ElementType.Earth)
+                    {
+                        unit.GetAnimator().Play("EarthKenzenRunningUp");
+                    }
+                    break;
                 case Directions.Down:
-                    unit.GetAnimator().Play("KenzenRunningDown");
+                    if (unit.PlayerController.currentElement == ElementType.Default)
+                    {
+                        unit.GetAnimator().Play("KenzenRunningDown");
+                    }
+                    else if (unit.PlayerController.currentElement == ElementType.Air)
+                    {
+                        unit.GetAnimator().Play("AirKenzenRunningDown");
+                    }
+                    else if (unit.PlayerController.currentElement == ElementType.Earth)
+                    {
+                        unit.GetAnimator().Play("EarthKenzenRunningDown");
+                    }
                 break;
                 case Directions.Left:
                     unit.Transforms.rotation = Quaternion.Euler(0, 180, 0);
-                    unit.GetAnimator().Play("KenzenRunning");
+                    if (unit.PlayerController.currentElement == ElementType.Default)
+                    {
+                        unit.GetAnimator().Play("KenzenRunning");
+                    }
+                    else if (unit.PlayerController.currentElement == ElementType.Air)
+                    {
+                        unit.GetAnimator().Play("AirKenzenRunning");
+                    }
+                    else if (unit.PlayerController.currentElement == ElementType.Earth)
+                    {
+                        unit.GetAnimator().Play("EarthKenzenRunning");
+                    }
                 break;
                 case Directions.Right:
                     unit.Transforms.rotation = Quaternion.Euler(0, 0, 0);
-                    unit.GetAnimator().Play("KenzenRunning");
+                    if (unit.PlayerController.currentElement == ElementType.Default)
+                    {
+                        unit.GetAnimator().Play("KenzenRunning");
+                    }
+                    else if (unit.PlayerController.currentElement == ElementType.Air)
+                    {
+                        unit.GetAnimator().Play("AirKenzenRunning");
+                    }
+                    else if (unit.PlayerController.currentElement == ElementType.Earth)
+                    {
+                        unit.GetAnimator().Play("EarthKenzenRunning");
+                    }
                 break;
                 case Directions.None:
-                    unit.GetAnimator().Play("KenzenIdle");
+                    if (unit.PlayerController.currentElement == ElementType.Default)
+                    {
+                        unit.GetAnimator().Play("KenzenIdle");
+                    }
+                    else if (unit.PlayerController.currentElement == ElementType.Air)
+                    {
+                        unit.GetAnimator().Play("KenzenIdleAir");
+                    }
+                    else if (unit.PlayerController.currentElement == ElementType.Earth)
+                    {
+                        unit.GetAnimator().Play("EarthKenzenIdle");
+                    }
                 break;
             }
     }

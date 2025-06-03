@@ -83,15 +83,15 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 10
+  m_SortingLayerID: 1221142945
+  m_SortingLayer: 2
+  m_SortingOrder: 0
   m_Sprite: {fileID: -1424485331, guid: e65294913b26d68448a45e766020ed8e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.32, y: 0.32}
+  m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -182,7 +182,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1, y: 1}
-    newSize: {x: 0.32, y: 0.32}
+    newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -282,9 +282,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 021e106028954d142846bd96314189f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blinkColor: {r: 0.9528302, g: 0.23820755, b: 0.23820755, a: 1}
   slider: {fileID: 0}
   healthText: {fileID: 0}
   status: {fileID: 8214489409440278786}
+  spriteRenderer: {fileID: 0}
 --- !u!114 &6125768640198169357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -320,8 +322,9 @@ MonoBehaviour:
   unit: {fileID: 4408343186632908311}
   stalagmit: {fileID: 7720599259090435442}
   stonePillar: {fileID: 3572247114797194996}
-  skillController: {fileID: 0}
   canAct: 1
+  isStalagmitActive: 0
+  isStonePillarActive: 0
 --- !u!114 &7720599259090435442
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -359,7 +362,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   stonePillarPrefab: {fileID: 7806012540114878243, guid: c21c4e6419842464abffbd4411c3e31a, type: 3}
-  skillController: {fileID: 0}
+  skillController: {fileID: 133617317494853435}
   stonePillarRange: 8
   stonePillarAmount: 25
 --- !u!114 &6112777454648339568
@@ -388,3 +391,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   status: {fileID: 8214489409440278786}
+  bars: {fileID: 4499986771363205354}

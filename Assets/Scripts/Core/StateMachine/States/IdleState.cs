@@ -14,7 +14,7 @@ public class IdleState : State
         }
         else if (unit.PlayerController.currentElement == ElementType.Earth)
         {
-            unit.GetAnimator().Play("IdleEarth");
+            unit.GetAnimator().Play("KenzenIdleEarth");
         }
         else if (unit.PlayerController.currentElement == ElementType.Air)
         {

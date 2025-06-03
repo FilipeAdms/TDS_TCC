@@ -19,8 +19,8 @@ public class MahhorController : MonoBehaviour
         status = GetComponent<StatusComponent>();
         unit = GetComponent<MahhorStateMachine>();
 
-        status.ModifyCurrentValue(AttributeType.currentHealth, 300);
-        status.ModifyBaseValue(AttributeType.maxHealth, 300);
+        status.ModifyCurrentValue(AttributeType.currentHealth, 700);
+        status.ModifyBaseValue(AttributeType.maxHealth, 700);
 
         mahhorBars.SetMaxHealth(status.maxHealth);
         mahhorBars.SetHealth(status.currentHealth);
