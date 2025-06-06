@@ -16,7 +16,7 @@ public class MoveState : State
 
     public override void Tick()
     {
-        if (unit.Rigidbody2d != null)
+        if (unit.Rigidbody2d != null && unit.PlayerSkillController.canAct )
         {
             // Captura os inputs do jogador
             vMove = Input.GetAxisRaw("Vertical");

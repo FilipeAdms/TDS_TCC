@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class MahhorMoveState : MahhorState
@@ -14,41 +15,62 @@ public class MahhorMoveState : MahhorState
     public override void Enter()
     {
         patrolIndex = Random.Range(0, 4);
-        // Direção do ponto de patrulha
-        direction = unit.MahhorController.patrolPoints[patrolIndex].transform.position - unit.Transforms.position;
-        if (Mathf.Abs(direction.x) > Mathf.Abs(direction.y))
+        if (unit.MahhorController.currentTransformation == MahhorTransformation.Default)
         {
-            if (direction.x >= 0) // Direita
+            // Direção do ponto de patrulha
+            direction = unit.MahhorController.patrolPoints[patrolIndex].transform.position - unit.Transforms.position;
+            if (Mathf.Abs(direction.x) > Mathf.Abs(direction.y))
             {
-                unit.GetAnimator().Play("MahhorWalkingRight", 0);
+                if (direction.x >= 0) // Direita
+                {
+                    unit.GetAnimator().Play("MahhorWalkingRight", 0);
+                }
+                else // Esquerda
+                {
+                    unit.GetAnimator().Play("MahhorWalkingLeft", 0);
+                }
             }
-            else // Esquerda
+            else
             {
-                unit.GetAnimator().Play("MahhorWalkingLeft", 0);
+                if (direction.y > 0) // Cima
+                {
+                    unit.GetAnimator().Play("MahhorWalkingUp", 0);
+                }
+                else // Baixo
+                {
+                    unit.GetAnimator().Play("MahhorWalkingDown", 0);
+                }
             }
-        }
-        else
+        } else if (unit.MahhorController.currentTransformation == MahhorTransformation.Madness)
         {
-            if (direction.y > 0) // Cima
-            {
-                unit.GetAnimator().Play("MahhorWalkingUp", 0);
-            }
-            else // Baixo
-            {
-                unit.GetAnimator().Play("MahhorWalkingDown", 0);
-            }
+            unit.GetAnimator().Play("MahhorIdleTransformed", 0);
         }
+
     }
 
     public override void Tick()
     {
-        
-        if (unit.Transforms.position == unit.MahhorController.patrolPoints[patrolIndex].transform.position)
+        if (unit.MahhorController.currentTransformation == MahhorTransformation.Default)
         {
-            unit.ChangeState<MahhorIdleState>();
-        } else
+            if (unit.Transforms.position == unit.MahhorController.patrolPoints[patrolIndex].transform.position)
+            {
+                unit.ChangeState<MahhorIdleState>();
+            }
+            else
+            {
+                MoveTo(unit.MahhorController.patrolPoints[patrolIndex].transform.position);
+            }
+        }
+        else if (unit.MahhorController.currentTransformation == MahhorTransformation.Madness)
         {
-            MoveTo(unit.MahhorController.patrolPoints[patrolIndex].transform.position);
+            if (unit.Transforms.position == unit.MahhorController.patrolPoints[patrolIndex].transform.position)
+            {
+                unit.ChangeState<MahhorIdleState>();
+            }
+            else
+            {
+                TeleportTo(unit.MahhorController.patrolPoints[patrolIndex].transform.position);
+            }
         }
     }
 
@@ -63,9 +85,24 @@ public class MahhorMoveState : MahhorState
         unit.Transforms.position = Vector2.MoveTowards(unit.Transforms.position, targetPosition, unit.Status.currentMoveSpeed * Time.deltaTime);
     }
 
+    private void TeleportTo (Vector2 targetPosition)
+    {
+        unit.Transforms.position = targetPosition;
+        unit.Rigidbody2d.velocity = Vector2.zero;
+    }
+
     private IEnumerator CanActCooldown()
     {
-        yield return new WaitForSeconds(1f);
-        unit.MahhorSkillController.canAct = true;
+        if (unit.MahhorController.currentTransformation == MahhorTransformation.Default)
+        {
+            yield return new WaitForSeconds(1f);
+            unit.MahhorSkillController.canAct = true;
+        } else if (unit.MahhorController.currentTransformation == MahhorTransformation.Madness)
+        {
+            yield return new WaitForSeconds(3f);
+            unit.MahhorSkillController.canAct = true;
+        }
+
+
     }
 }

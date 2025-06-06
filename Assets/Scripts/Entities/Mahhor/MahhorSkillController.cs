@@ -7,6 +7,7 @@ public class MahhorSkillController : MonoBehaviour
     [SerializeField] private MahhorStateMachine unit;
     [SerializeField] Stalagmit stalagmit;
     [SerializeField] StonePillar stonePillar;
+    [SerializeField] MahhorController controller;
 
     #region Flags
     public bool canAct = true;
@@ -17,6 +18,8 @@ public class MahhorSkillController : MonoBehaviour
     #region CoolDown's
     private float stalagmitCooldown = 5f;
     private float stonePillarCooldown = 7f;
+    private readonly float idleTimeDefault = 3.5f; // Tempo de espera para a transformação padrão
+    private readonly float idleTimeMadness = 2f; // Tempo de espera para a transformação de loucura
     #endregion
 
     private void Update()
@@ -48,7 +51,7 @@ public class MahhorSkillController : MonoBehaviour
 
     private IEnumerator ChoosingSkill()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(1.5f);
         Debug.Log("Escolhendo habilidade");
         if (canAct)
         {
@@ -87,8 +90,29 @@ public class MahhorSkillController : MonoBehaviour
         else
         {
             Debug.Log("Ação não pode ser realizada, esperando cooldown");
-            unit.GetAnimator().Play("Idle");
-            StartCoroutine(WaitForCanAct());
+            if (unit.MahhorController.currentTransformation == MahhorTransformation.Default)
+            {
+                yield return new WaitForSeconds(idleTimeDefault);
+                unit.GetAnimator().Play("Idle");
+                StartCoroutine(WaitForCanAct());
+            }
+            else if (unit.MahhorController.currentTransformation == MahhorTransformation.Transforming)
+            {
+                yield return null;
+            }
+            else if (unit.MahhorController.currentTransformation == MahhorTransformation.Madness)
+            {
+                yield return new WaitForSeconds(idleTimeMadness);
+                unit.GetAnimator().Play("MahhorIdleTransformed");
+                unit.MahhorSkillController.ChooseSkill();
+            }
+            else
+            {
+                Debug.LogError("Transformação desconhecida: " + unit.MahhorController.currentTransformation);
+            }
+
         }
     }
 }
+
+

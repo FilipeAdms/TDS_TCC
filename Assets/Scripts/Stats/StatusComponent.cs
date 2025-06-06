@@ -13,8 +13,8 @@ public class StatusComponent : MonoBehaviour
     public float currentMoveSpeed = 4f;
     public float currentAttackDamage = 20f;
     public float currentDefense = 20f;
-    public float currentAuraRegen = 1.25f;
-    public float currentHealthRegen = 1.75f;
+    public float currentAuraRegen = 3f;
+    public float currentHealthRegen = 3f;
 
     // Valores máximos
     [Header("Atributos Base")]
@@ -23,8 +23,8 @@ public class StatusComponent : MonoBehaviour
     public float baseMoveSpeed = 4f;
     public float baseAttackDamage = 20f;
     public float baseDefense = 20f;
-    public float baseHealthRegen = 1.25f;
-    public float baseAuraRegen = 1.75f;
+    public float baseHealthRegen = 3f;
+    public float baseAuraRegen = 3f;
 
     // Valores iniciais (para usar como referência)
     [Header("Atributos Base")]
@@ -33,8 +33,8 @@ public class StatusComponent : MonoBehaviour
     public float inicialMoveSpeed = 4f;
     public float inicialAttackDamage = 20f;
     public float inicialDefense = 20f;
-    public float inicialHealthRegen = 1.25f;
-    public float inicialAuraRegen = 1.75f;
+    public float inicialHealthRegen = 3f;
+    public float inicialAuraRegen = 3f;
 
     public void ModifyCurrentValue(AttributeType type, float value) // Modifica o valor de um atributo
     {

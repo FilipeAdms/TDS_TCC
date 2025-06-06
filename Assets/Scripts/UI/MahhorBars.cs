@@ -12,6 +12,7 @@ public class MahhorBars : MonoBehaviour
     public Slider slider;
     public TextMeshProUGUI healthText;
     [SerializeField] private StatusComponent status;
+    [SerializeField] private MahhorSound mahhorSound;
     [SerializeField] private SpriteRenderer spriteRenderer;
     private int blinkCount = 3;
     private float blinkDuration = 0.05f; // tempo entre os pisques
@@ -26,6 +27,7 @@ public class MahhorBars : MonoBehaviour
             originalColor = spriteRenderer.color;
         }
     }
+    
     public void SetHealth(float currentHealth)
     {
         slider.value = currentHealth; // Atualiza o valor do slider com a vida atual
@@ -39,6 +41,7 @@ public class MahhorBars : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
+        mahhorSound.PlayHurt();
         // posDamage -> dano pós mitigação
         float posDamage = (damage * 100) / (status.currentDefense + 100); // Cálculo da mitigação de dano
         status.ModifyCurrentValue(AttributeType.currentHealth, -posDamage); // Subtrai o dano da vida atual

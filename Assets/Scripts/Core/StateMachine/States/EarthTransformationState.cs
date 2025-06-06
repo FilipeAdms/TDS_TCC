@@ -42,10 +42,10 @@ public class EarthTransformationState : State
     private void SetAirStats()
     {
         float tempSpeed = unit.Status.currentMoveSpeed * 0.1f;
-        float tempDamage = unit.Status.currentAttackDamage * 0.25f;
+        float tempDamage = unit.Status.currentAttackDamage * 2.5f;
 
-        unit.Status.ModifyCurrentValue(AttributeType.currentMoveSpeed, -tempSpeed); // Diminui a velocidade em 10%
-        unit.Status.ModifyCurrentValue(AttributeType.currentAttackDamage, tempDamage); // Aumenta o dano em 25%
+        unit.Status.ModifyCurrentValue(AttributeType.currentMoveSpeed, -tempSpeed); // Diminui a velocidade
+        unit.Status.ModifyCurrentValue(AttributeType.currentAttackDamage, tempDamage); // Aumenta o dano
     }
     public IEnumerator WaitForAnimation(float duration)
     {

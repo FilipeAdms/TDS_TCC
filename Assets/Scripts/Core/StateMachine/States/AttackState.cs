@@ -46,7 +46,7 @@ public class AttackState : State
                     animName = "AirKenzenAttackUp";
                 else if (unit.PlayerController.currentElement == ElementType.Earth)
                 {
-                    animName = "EarthKenzenAttackRight";
+                    animName = "EarthKenzenAttackUp";
                 }
                 break;
             case Directions.Down:
@@ -57,7 +57,7 @@ public class AttackState : State
                     animName = "AirKenzenAttackDown";
                 else if (unit.PlayerController.currentElement == ElementType.Earth)
                 {
-                    animName = "EarthKenzenAttackRight";
+                    animName = "EarthKenzenAttackDown";
                 }
                 break;
         }

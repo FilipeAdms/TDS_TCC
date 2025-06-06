@@ -68,16 +68,16 @@ public class MahhorSetStatus : MonoBehaviour
                 currentMoveSpeedMultiplier = 2f;
                 currentAttackDamageMultiplier = 0.75f;
                 currentDefenseMultiplier = 0.5f;
-                currentAuraRegenMultiplier = 0.5f;
-                currentHealthRegenMultiplier = 0.75f;
+                currentAuraRegenMultiplier = 100f;
+                currentHealthRegenMultiplier = 100f;
 
                 maxHealthMultiplier = 0.75f;
                 maxAuraMultiplier = 0.75f;
                 baseMoveSpeedMultiplier = 2f;
                 baseAttackDamageMultiplier = 0.75f;
                 baseDefenseMultiplier = 0.5f;
-                baseHealthRegenMultiplier = 0.5f;
-                baseAuraRegenMultiplier = 0.75f;
+                baseHealthRegenMultiplier = 100f;
+                baseAuraRegenMultiplier = 100f;
                 break;
             case "medium":
                 currentHealthMultiplier = 1f;
@@ -85,16 +85,16 @@ public class MahhorSetStatus : MonoBehaviour
                 currentMoveSpeedMultiplier = 4f;
                 currentAttackDamageMultiplier = 1f;
                 currentDefenseMultiplier = 1f;
-                currentAuraRegenMultiplier = 1f;
-                currentHealthRegenMultiplier = 1f;
+                currentAuraRegenMultiplier = 100f;
+                currentHealthRegenMultiplier = 100f;
 
                 maxHealthMultiplier = 1f;
                 maxAuraMultiplier = 1f;
                 baseMoveSpeedMultiplier = 4f;
                 baseAttackDamageMultiplier = 1f;
                 baseDefenseMultiplier = 1f;
-                baseHealthRegenMultiplier = 1f;
-                baseAuraRegenMultiplier = 1f;
+                baseHealthRegenMultiplier = 100f;
+                baseAuraRegenMultiplier = 100f;
                 break;
             case "hard":
                 currentHealthMultiplier = 2f;
@@ -102,16 +102,16 @@ public class MahhorSetStatus : MonoBehaviour
                 currentMoveSpeedMultiplier = 6f;
                 currentAttackDamageMultiplier = 2.5f;
                 currentDefenseMultiplier = 2f;
-                currentAuraRegenMultiplier = 2f;
-                currentHealthRegenMultiplier = 2f;
+                currentAuraRegenMultiplier = 100f;
+                currentHealthRegenMultiplier = 100f;
 
                 maxHealthMultiplier = 4f;
                 maxAuraMultiplier = 4f;
                 baseMoveSpeedMultiplier = 6f;
                 baseAttackDamageMultiplier = 2.5f;
                 baseDefenseMultiplier = 2f;
-                baseHealthRegenMultiplier = 2f;
-                baseAuraRegenMultiplier = 2f;
+                baseHealthRegenMultiplier = 100f;
+                baseAuraRegenMultiplier = 100f;
                 break;
         }
     }

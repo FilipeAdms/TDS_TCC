@@ -9,6 +9,7 @@ public class PlayerSkillController : MonoBehaviour
     public bool canAct = true; // Indica se o jogador pode realizar ações
     public bool canDash = true;
     public bool canTransform = true;
+    public StatusComponent status;
     private PlayerStateMachine unit;
     private TransformationState transformationState = TransformationState.Ready;
     private float transformationDuration = 15f;
@@ -99,6 +100,8 @@ public class PlayerSkillController : MonoBehaviour
             {
                 templateChanging.DefaultTransformationTemplate();
                 unit.PlayerController.currentElement = ElementType.Default;
+                status.ResetCurrentValue(AttributeType.currentMoveSpeed);
+                status.ResetCurrentValue(AttributeType.currentAttackDamage);
                 chargingTimer = 0;
                 transformationState = TransformationState.Cooldown;
             }

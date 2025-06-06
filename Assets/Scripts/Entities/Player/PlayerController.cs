@@ -10,10 +10,15 @@ public class PlayerController : MonoBehaviour
     public bool canAttack = true;
     public ElementType currentElement; // Elemento atual do jogador
     [SerializeField] private PlayerBars playerBars;
+    [SerializeField] private KenzenDeath kenzenDeath;
 
-    private void Start()
+    private void Awake()
     {
         currentElement = ElementType.Default; // Define o elemento inicial do jogador
+
+    }
+    private void Start()
+    {
         status = GetComponent<StatusComponent>();
         unit = GetComponent<PlayerStateMachine>();
 
@@ -33,7 +38,7 @@ public class PlayerController : MonoBehaviour
         }
         if (status.currentHealth < 1)
         {
-            SceneManager.LoadScene("Menu");
+            kenzenDeath.DeathScene();
         }
     }
 

@@ -45,7 +45,7 @@ public class AirTransformationState : State
         float tempDamage = unit.Status.currentAttackDamage * 0.1f;
 
         unit.Status.ModifyCurrentValue(AttributeType.currentMoveSpeed, tempSpeed); // Aumenta a velocidade em 25%
-        unit.Status.ModifyCurrentValue(AttributeType.currentAttackDamage, -tempDamage); // Diminui o dano em 10%
+        unit.Status.ModifyCurrentValue(AttributeType.currentAttackDamage, 200); // Diminui o dano em 10%
     }
     public IEnumerator WaitForAnimation(float duration)
     {

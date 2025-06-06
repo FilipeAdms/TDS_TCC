@@ -6,16 +6,41 @@ public class MahhorIdleState : MahhorState
 {
     public MahhorIdleState(MahhorStateMachine unit) : base(unit) { }
 
-    public override void Enter() {
-        unit.GetAnimator().Play("Idle");
-        unit.StartCoroutine(IdleTime());
+    private readonly float idleTimeDefault = 3.5f; // Tempo de espera para a transformação padrão
+    private readonly float idleTimeMadness = 2f; // Tempo de espera para a transformação de loucura
+
+    public override void Enter()
+    {
+
+        if (unit.MahhorController.currentTransformation == MahhorTransformation.Default)
+        {
+            unit.GetAnimator().Play("Idle");
+            unit.StartCoroutine(IdleTime());
+        }
+        else if (unit.MahhorController.currentTransformation == MahhorTransformation.Madness)
+        {
+            unit.GetAnimator().Play("MahhorIdleTransformed");
+            unit.StartCoroutine(IdleTime());
+        }
+        else
+        {
+            Debug.LogError("Transformação desconhecida: " + unit.MahhorController.currentTransformation);
+        }
     }
     public override void Tick() { }
     public override void Exit() { }
 
     private IEnumerator IdleTime()
     {
-        yield return new WaitForSeconds(3.5f);
-        unit.MahhorSkillController.ChooseSkill();
+        if (unit.MahhorController.currentTransformation == MahhorTransformation.Default)
+        {
+            yield return new WaitForSeconds(idleTimeDefault);
+            unit.MahhorSkillController.ChooseSkill();
+        }
+        else if (unit.MahhorController.currentTransformation == MahhorTransformation.Madness)
+        {
+            yield return new WaitForSeconds(idleTimeMadness);
+            unit.MahhorSkillController.ChooseSkill();
+        }
     }
 }

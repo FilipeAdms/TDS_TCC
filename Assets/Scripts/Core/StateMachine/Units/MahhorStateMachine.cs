@@ -12,6 +12,9 @@ public class MahhorStateMachine : MonoBehaviour
     public MahhorController MahhorController { get; private set; } // O controlador do Mahhor
     public MahhorSkillController MahhorSkillController { get; private set; } // O controlador da skill do Mahhor
     public FindPlayerOnAttack FindPlayerOnAttack { get; private set; } // O controlador de ataque do Mahhor
+    public MahhorSound MahhorSound { get; private set; } // O controlador de som do Mahhor
+    public BackMusic BackMusic { get; private set; } // O controlador de música de fundo do Mahhor
+    public MahhorBars MahhorBars { get; private set; } // As barras de Mahhor
 
     private Animator animator; // O Animator da unidade
 
@@ -33,6 +36,12 @@ public class MahhorStateMachine : MonoBehaviour
         MahhorSkillController = GetComponent<MahhorSkillController>();
 
         FindPlayerOnAttack = GetComponent<FindPlayerOnAttack>();
+
+        MahhorBars = GetComponent<MahhorBars>();
+
+        MahhorSound = GetComponent<MahhorSound>();
+
+        BackMusic = FindObjectOfType<BackMusic>(); // Encontra o objeto de música de fundo na cena
     }
 
     private void Start()
@@ -43,6 +52,7 @@ public class MahhorStateMachine : MonoBehaviour
             { typeof(MahhorMoveState), new MahhorMoveState(this) },
             { typeof(MahhorAttackState), new MahhorAttackState(this) },
             { typeof(MahhorIdleState), new MahhorIdleState(this) },
+            { typeof(MahhorTransformationState), new MahhorTransformationState(this) },
         };
 
         // Define o estado inicial como IdleState
